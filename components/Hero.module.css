@@ -1,0 +1,97 @@
+.hero {
+  height: 90vh;
+  width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.leftHero {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.intro {
+  font-size: 2rem;
+  color: #e5e9f0;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 6.4rem;
+  color: #e5e9f0;
+}
+
+.role {
+  display: flex;
+  gap: 2rem;
+}
+.fixedSymbol {
+  content: "<";
+  color: #4d5bce;
+  font-size: 3.4rem;
+}
+.typing {
+  display: flex;
+  gap: 1rem;
+}
+.typingText {
+  font-size: 3.4rem;
+  color: #4d5bce;
+}
+.cursor {
+  font-size: 3.4rem;
+  color: #4d5bce;
+}
+.lower {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.comment {
+  font-size: 1.8rem;
+  color: #607b96;
+}
+.gitlink {
+  display: flex;
+  gap: 1rem;
+}
+.const {
+  font-size: 1.8rem;
+  color: #4d5bce;
+}
+.variable {
+  font-size: 1.8rem;
+  color: #43d9ad;
+}
+.link {
+  font-size: 1.8rem;
+  color: #e99287;
+}
+.equal {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.rightHero {
+  position: relative;
+  /* background-image: url("/Background Blurs.png"); */
+  justify-self: flex-end;
+  margin-left: 10rem;
+}
+.blur {
+  position: absolute;
+  /* width: 100%; */
+  top: -40%;
+  z-index: -1;
+  opacity: 75%;
+  left: -50%;
+}
