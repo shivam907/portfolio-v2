@@ -18,6 +18,9 @@
   position: relative;
   display: inline-block;
 }
+.footerLink:first-child {
+  padding-right: 3.6rem;
+}
 .footerLink1 {
   color: #607b96;
   font-size: 1.8rem;

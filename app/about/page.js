@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import classes from "./about.module.css";
+import MyCodeComponent from "@/components/Code";
 const page = () => {
   let arr = [];
   for (let i = 1; i <= 16; i++) {
@@ -160,6 +162,85 @@ const page = () => {
               * officia deserunt mollit anim id est laborum.
             </p>
             <p class={classes.p}>*/</p>
+          </div>
+        </div>
+      </div>
+      <div className={classes.snippets}>
+        <div className={classes.snippetHead}>// Code Snippet Showcase</div>
+        <div className={classes.codeSnippets}>
+          <div className={classes.codeSnippetsBox}>
+            <div className={classes.codeSnippetsHead}>
+              <div className={classes.profile}>
+                <div className={classes.profileImg}>
+                  <img src="/profile.png" alt="" />
+                </div>
+                <div className={classes.profileData}>
+                  <div className={classes.profileName}>Shivam907</div>
+                  <div className={classes.profileDate}>
+                    Created 5 months ago
+                  </div>
+                </div>
+              </div>
+              <div className={classes.details}>
+                <div className={classes.detail1}>
+                  <img src="/comments-icon.png" alt="" />
+                  <p className={classes.detailText}>details</p>
+                </div>
+                <div className={classes.detail1}>
+                  <img src="Star.png" alt="" />
+                  <p className={classes.detailText}>3 stars</p>
+                </div>
+              </div>
+            </div>
+            <div className={classes.codeBox}>
+              {/* <MyCodeComponent
+                code={`function initializeModelChunk<T>(
+                    chunk: ResolvedModelChunk): T { 
+                        const value: T = parseModel(chunk._response, chunk._value); 
+                        const initializedChunk: InitializedChunk<T> = (chunk: any); 
+                        initializedChunk._status = INITIALIZED; initializedChunk._value = value; return value; 
+                        }
+}`}
+              /> */}
+              <img src="/codeBlock.png" alt="" />
+            </div>
+          </div>
+          <div className={classes.codeSnippetsBox}>
+            <div className={classes.codeSnippetsHead}>
+              <div className={classes.profile}>
+                <div className={classes.profileImg}>
+                  <img src="/profile.png" alt="" />
+                </div>
+                <div className={classes.profileData}>
+                  <div className={classes.profileName}>Shivam907</div>
+                  <div className={classes.profileDate}>
+                    Created 5 months ago
+                  </div>
+                </div>
+              </div>
+              <div className={classes.details}>
+                <div className={classes.detail1}>
+                  <img src="/comments-icon.png" alt="" />
+                  <p className={classes.detailText}>details</p>
+                </div>
+                <div className={classes.detail1}>
+                  <img src="Star.png" alt="" />
+                  <p className={classes.detailText}>3 stars</p>
+                </div>
+              </div>
+            </div>
+            <div className={classes.codeBox}>
+              {/* <MyCodeComponent
+                code={`function initializeModelChunk<T>(
+                    chunk: ResolvedModelChunk): T { 
+                        const value: T = parseModel(chunk._response, chunk._value); 
+                        const initializedChunk: InitializedChunk<T> = (chunk: any); 
+                        initializedChunk._status = INITIALIZED; initializedChunk._value = value; return value; 
+                        }
+}`}
+              /> */}
+              <img src="/codeBlock.png" alt="" />
+            </div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.footerLeft}>
-        <div className={classes.footerLink}>find me in:</div>
+        <div className={classes.footerLink}>find me :</div>
         <div className={classes.footerLink}>
           <img src="/icons8-instagram (1).svg" alt="" />
         </div>
