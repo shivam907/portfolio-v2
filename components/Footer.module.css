@@ -1,0 +1,89 @@
+.nameHeading {
+  color: #607b96;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  padding-left: 3rem;
+  font-weight: 500;
+}
+.nameHeading:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.footerLink {
+  color: #607b96;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  border-left: 1px solid #1e2d3d;
+  border-right: 1px solid #1e2d3d;
+  position: relative;
+  display: inline-block;
+}
+.footerLink1 {
+  color: #607b96;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  padding-right: 1rem;
+  border-left: 1px solid #1e2d3d;
+  border-right: 1px solid #1e2d3d;
+  position: relative;
+  display: inline-block;
+}
+.footerLink img {
+  width: 3rem;
+}
+.github {
+  display: flex;
+  padding-right: 3rem;
+}
+.navLinkActive {
+  color: #fff !important;
+  border-bottom: 3px solid #fea55f;
+}
+.footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #1e2d3d;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  /* gap: 20rem; */
+}
+.navLinks {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+}
+.navLink:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.8px;
+  left: 50%;
+  position: absolute;
+  background: #fea55f;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navLink:hover:after {
+  width: 100%;
+  left: 0;
+}
+.navLink:hover {
+  cursor: pointer;
+  color: #fff !important;
+}
+.navl {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
