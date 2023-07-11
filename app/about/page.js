@@ -3,6 +3,10 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import classes from "./about.module.css";
 const page = () => {
+  let arr = [];
+  for (let i = 1; i <= 16; i++) {
+    arr.push(<div className={classes.number}>{i}</div>);
+  }
   return (
     <>
       <div className={classes.leftBar}>
@@ -126,7 +130,36 @@ const page = () => {
         <div className={classes.upperBar}>
           <div className={classes.fileOpened}>
             <div className={classes.fileOpenedName}>personal-info</div>
-            <div className={classes.fileIcons}></div>
+            <div className={classes.fileIcons}>
+              <img src="/close-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className={classes.displayFile}>
+          <div className={classes.numbers}>{...arr}</div>
+          <div class={classes.displayFileContent}>
+            <p class={classes.p}>/**</p>
+            <p class={classes.p}>* About me</p>
+            <p class={classes.p}>* I have 5 years of еxperience in web</p>
+            <p class={classes.p}>* development lorem ipsum dolor sit amet,</p>
+            <p class={classes.p}>
+              * consectetur adipiscing elit, sed do eiusmod
+            </p>
+            <p class={classes.p}>* tempor incididunt ut labore et dolore</p>
+            <p class={classes.p}>* magna aliqua. Ut enim ad minim veniam,</p>
+            <p class={classes.p}>* quis nostrud exercitation ullamco laboris</p>
+            <p class={classes.p}>* nisi ut aliquip ex ea commodo consequat.</p>
+            <p class={classes.p}>* Duis aute irure dolor in reprehenderit in</p>
+            <p class={classes.p}>*</p>
+            <p class={classes.p}>* Duis aute irure dolor in reprehenderit in</p>
+            <p class={classes.p}>
+              * voluptate velit esse cillum dolore eu fugiat
+            </p>
+            <p class={classes.p}>* nulla pariatur. Excepteur sint occaecat</p>
+            <p class={classes.p}>
+              * officia deserunt mollit anim id est laborum.
+            </p>
+            <p class={classes.p}>*/</p>
           </div>
         </div>
       </div>
