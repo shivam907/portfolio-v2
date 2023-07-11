@@ -1,0 +1,12 @@
+.leftBar {
+  height: 100vh;
+  width: fit-content;
+  border-right: 0.1rem solid #1e2d3d;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.img2 svg:hover {
+  fill: red;
+}
