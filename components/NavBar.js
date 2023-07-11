@@ -1,16 +1,21 @@
 import React from "react";
 import classes from "./NavBar.module.css";
+import Link from "next/link";
 const NavBar = () => {
   return (
     <nav className={classes.nav}>
       <div className={classes.leftNavItems}>
-        <div className={classes.nameHeading}>shivam-kaushal</div>
+        <Link href="/">
+          <div className={classes.nameHeading}>shivam-kaushal</div>
+        </Link>
         <div className={classes.navl}>
           <div className={classes.navLinks}>
             <div className={`${classes.navLink} ${classes.navLinkActive}`}>
               _hello
             </div>
-            <div className={classes.navLink}>_about-me</div>
+            <Link href="/about">
+              <div className={classes.navLink}>_about-me</div>
+            </Link>
             <div className={classes.navLink}>_projects</div>
           </div>
         </div>

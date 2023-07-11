@@ -1,6 +1,6 @@
 .hero {
   height: 90vh;
-  width: 120rem;
+  width: 110rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,7 +85,8 @@
   position: relative;
   /* background-image: url("/Background Blurs.png"); */
   justify-self: flex-end;
-  margin-left: 10rem;
+  margin-left: 5rem;
+  margin-right: -10rem;
 }
 .blur {
   position: absolute;
@@ -93,5 +94,5 @@
   top: -40%;
   z-index: -1;
   opacity: 75%;
-  left: -50%;
+  left: -45%;
 }

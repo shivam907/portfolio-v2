@@ -7,4 +7,8 @@
 }
 body {
   background-color: #011627;
+  /* display: flex; */
+}
+main {
+  display: flex;
 }

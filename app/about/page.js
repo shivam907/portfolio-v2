@@ -23,13 +23,15 @@ const page = () => {
           </div>
           <div className={classes.folders}>
             <div className={classes.folder}>
-              <div className={classes.folderIcon}>
-                <img src="/folderIcon.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.folderIcon}>
+                  <img src="/folderIcon.png" alt="" />
+                </div>
+                <div className={classes.folderImage}>
+                  <img src="/folder1.png" alt="" />
+                </div>
+                <div className={classes.folderName}>bio</div>
               </div>
-              <div className={classes.folderImage}>
-                <img src="/folder1.png" alt="" />
-              </div>
-              <div className={classes.folderName}>bio</div>
               <div className={classes.folderContent}>
                 <div className={classes.file}>
                   <div className={classes.fileIcon}>
@@ -46,13 +48,15 @@ const page = () => {
               </div>
             </div>
             <div className={classes.folder}>
-              <div className={classes.folderIcon}>
-                <img src="/folderIcon.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.folderIcon}>
+                  <img src="/folderIcon.png" alt="" />
+                </div>
+                <div className={classes.folderImage}>
+                  <img src="/folder2.png" alt="" />
+                </div>
+                <div className={classes.folderName}>interests</div>
               </div>
-              <div className={classes.folderImage}>
-                <img src="/folder2.png" alt="" />
-              </div>
-              <div className={classes.folderName}>interests</div>
               <div className={classes.folderContent}>
                 <div className={classes.file}>
                   <div className={classes.fileIcon}>
@@ -69,13 +73,15 @@ const page = () => {
               </div>
             </div>
             <div className={classes.folder}>
-              <div className={classes.folderIcon}>
-                <img src="/folderIcon.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.folderIcon}>
+                  <img src="/folderIcon.png" alt="" />
+                </div>
+                <div className={classes.folderImage}>
+                  <img src="/folder3.png" alt="" />
+                </div>
+                <div className={classes.folderName}>education</div>
               </div>
-              <div className={classes.folderImage}>
-                <img src="/folder3.png" alt="" />
-              </div>
-              <div className={classes.folderName}>education</div>
               <div className={classes.folderContent}>
                 <div className={classes.file}>
                   <div className={classes.fileIcon}>
@@ -95,22 +101,32 @@ const page = () => {
         </div>
         <div className={classes.contacts}>
           <div className={classes.heading}>
-            <div className={classes.icon}></div>
-            <div className={classes.name}>personal-info</div>
+            <div className={classes.icon}>
+              <img src="/icon.png" alt="" />
+            </div>
+            <div className={classes.name}>contacts</div>
           </div>
           <div className={classes.folders}>
-            <div className={classes.folder}>
+            <div className={classes.folderHead}>
               <div className={classes.fileIcon}>
                 <img src="/mail-icon.png" alt="" />
               </div>
               <div className={classes.fileName}>user@gmail.com</div>
             </div>
-            <div className={classes.folder}>
+            <div className={classes.folderHead}>
               <div className={classes.fileIcon}>
                 <img src="/phone-icon.png" alt="" />
               </div>
               <div className={classes.fileName}>+91 8968969929</div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.code}>
+        <div className={classes.upperBar}>
+          <div className={classes.fileOpened}>
+            <div className={classes.fileOpenedName}>personal-info</div>
+            <div className={classes.fileIcons}></div>
           </div>
         </div>
       </div>
