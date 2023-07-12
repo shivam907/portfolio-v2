@@ -100,7 +100,7 @@
 
 .code {
   height: 100vh;
-  width: 70rem;
+  width: 100%;
   display: flex;
   border-right: 1px solid #1e2d3d;
   flex-direction: column;
@@ -195,4 +195,121 @@
 .detailText {
   font-size: 1.6rem;
   color: #607b96;
+}
+.checkbox {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #607b96;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+.check {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+/* .checkbox::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.checkbox:checked::before {
+  transform: scale(1);
+} */
+.select{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem;
+}
+.option{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.check{
+  margin-right: 1rem;
+}
+.selectOption{
+  /* width: 2.6rem; */
+  height: 2.6rem;
+}
+.optionName{
+  font-size: 1.8rem;
+  color: #607B96;
+}
+.node{
+  transform: translateY(-1.2rem);
+}
+.displayFile{
+  margin: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 5rem;
+  /* background-color: #fff; */
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projContent{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projNames{
+  display: flex;
+  gap: 1rem;
+}
+
+.projName{
+  font-size: 1.8rem;
+  color: #5565E8;
+  font-weight: 600;
+}
+.projectName{
+  font-size: 1.8rem;
+  color: #607B96;
+}
+.projectBox{
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #011221;
+  border: 1px solid #1E2D3D;
+  border-radius: 1.5rem;
+}.projContent p{
+  font-size: 2rem;
+  color: #607B96;
+  line-height: 1.6;
+}
+.view{
+  background-color: #1C2B3A;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  align-self: flex-start;
+  padding: 1rem 2rem;
 }
