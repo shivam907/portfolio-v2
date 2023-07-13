@@ -113,9 +113,7 @@ const page = () => {
       <div className={classes.code}>
         <div className={classes.upperBar}>
           <div className={classes.fileOpened}>
-            <div className={classes.fileOpenedName}>
-              Projects.md
-            </div>
+            <div className={classes.fileOpenedName}>Projects.md</div>
             <div className={classes.fileIcons}>
               <img src="/close-icon.png" alt="" />
             </div>
@@ -130,8 +128,33 @@ const page = () => {
             <div className={classes.projectBox}>
               <img src="/proj.png" alt="" />
               <div className={classes.projContent}>
-                <p>Duis aute irure dolor in velit esse cillum dolore.</p>
-                <div className={classes.view}>View Project</div>
+                <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
+                <div className={classes.btns}>
+                  <div className={classes.view}>Live Demo</div>
+                  <div className={classes.imm}>
+                    <img src="/icons8-github.svg" alt="" />
+                    <div className={classes.cir}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.project}>
+            <div className={classes.projNames}>
+              <div className={classes.projName}>Project 1</div>
+              <div className={classes.projectName}>// _ui-animations</div>
+            </div>
+            <div className={classes.projectBox}>
+              <img src="/proj.png" alt="" />
+              <div className={classes.projContent}>
+                <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
+                <div className={classes.btns}>
+                  <div className={classes.view}>Live Demo</div>
+                  <div className={classes.imm}>
+                    <img src="/icons8-github.svg" alt="" />
+                    <div className={classes.cir}></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -144,20 +167,13 @@ const page = () => {
               <img src="/proj.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>
-                <div className={classes.view}>View Project</div>
-              </div>
-            </div>
-          </div>
-          <div className={classes.project}>
-            <div className={classes.projNames}>
-              <div className={classes.projName}>Project 1</div>
-              <div className={classes.projectName}>// _ui-animations</div>
-            </div>
-            <div className={classes.projectBox}>
-              <img src="/proj.png" alt="" />
-              <div className={classes.projContent}>
-                <p>Duis aute irure dolor in velit esse cillum dolore.</p>
-                <div className={classes.view}>View Project</div>
+                <div className={classes.btns}>
+                  <div className={classes.view}>Live Demo</div>
+                  <div className={classes.imm}>
+                    <img src="/icons8-github.svg" alt="" />
+                    <div className={classes.cir}></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

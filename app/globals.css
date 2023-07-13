@@ -6,6 +6,7 @@
   font-size: 62.5%;
 }
 body {
+  overflow: hidden;
   background-color: #011627;
   /* display: flex; */
 }

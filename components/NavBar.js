@@ -51,6 +51,8 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+      <Link href="/contact">
+
       <div
         className={`${classes.navLink} ${
           active == 3 ? classes.navLinkActive : ""
@@ -61,6 +63,7 @@ const NavBar = () => {
       >
         _contact-me
       </div>
+      </Link>
     </nav>
   );
 };
