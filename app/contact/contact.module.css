@@ -101,6 +101,7 @@
 .code {
   height: 100vh;
   width: 70rem;
+  justify-self: flex-end;
   display: flex;
   border-right: 1px solid #1e2d3d;
   flex-direction: column;
@@ -195,4 +196,89 @@
 .detailText {
   font-size: 1.6rem;
   color: #607b96;
+}
+.folderHead:hover .fileName{
+  color: #fff;
+}
+.view{
+  background-color: #1C2B3A;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  transition: 0.1s all;
+}
+.view:hover{
+  transition: 0.1s all;
+  cursor: pointer;
+  background-color: #374c60;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  width: 70rem;
+height: 100vh;
+  border-right: 1px solid #1e2d3d;
+}
+.contactData{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 5rem 10rem;
+}
+
+.inp1{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.inp1 label{
+  font-size: 1.8rem;
+  color: #607b96;
+}
+.inp1 input, .inp1 textarea{
+  width: 50rem;
+  padding: 1rem 2rem;
+  background-color: #011221;
+  border: 1px solid #607b96;
+  font-size: 2rem;
+color: #607b96;
+  border-radius: 1rem;
+}
+
+.inp1 textarea{
+  height: 15rem;
+}
+.displayFile {
+  display: flex;
+  width: 100%;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  border-right: 1px solid #1e2d3d;
+
+  padding: 2rem 3rem;
+  gap: 1rem;
+}
+.number {
+  color: #607b96;
+  font-size: 1.8rem;
+}
+.displayFileContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  /* border-right: 1px solid #1e2d3d; */
+
+  padding: 2rem 3rem;
+  gap: 1rem;
+}
+.p {
+  color: #607b96;
+  font-size: 1.8rem;
 }
