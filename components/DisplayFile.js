@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./DisplayFile.module.css";
 const DisplayFile = (props) => {
   let arr = [];
-  for (let i = 1; i <= props.list.length; i++) {
+  for (let i = 1; i < props.list.length-2; i++) {
     arr.push(<div className={classes.number}>{i}</div>);
   }
   let list = [];

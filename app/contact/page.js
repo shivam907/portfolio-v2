@@ -12,7 +12,19 @@ const page = () => {
   const [name, changeName] = React.useState("");
   const [email, changeEmail] = React.useState("");
   const [message, changeMessage] = React.useState("");
+  const [form, formSubmitted] = React.useState(false);
+  const formHandler = () => {
+    formSubmitted(true);
+    changeName("");
+    changeEmail("");
+    changeMessage("");
+  };
   let arr = [];
+  React.useEffect(() => {
+    setTimeout(function () {
+      formSubmitted(false);
+    }, 5000);
+  }, [form]);
 
   for (let i = 1; i <= 12; i++) {
     arr.push(<div className={classes.number}>{i}</div>);
@@ -100,6 +112,7 @@ const page = () => {
             <label htmlFor="">_name:</label>
             <input
               type="text"
+              value={name}
               onChange={(e) => {
                 changeName(e.target.value);
               }}
@@ -109,6 +122,7 @@ const page = () => {
             <label htmlFor="">_email:</label>
             <input
               type="email"
+              value={email}
               onChange={(e) => {
                 changeEmail(e.target.value);
               }}
@@ -118,12 +132,15 @@ const page = () => {
             <label htmlFor="">_message:</label>
             <textarea
               type="text"
+              value={message}
               onChange={(e) => {
                 changeMessage(e.target.value);
               }}
             />
           </div>
-          <div className={classes.view}>submit-message</div>
+          <div className={classes.view} onClick={formHandler}>
+            submit-message
+          </div>
         </div>
       </div>
       <div className={classes.code}>
@@ -202,6 +219,14 @@ const page = () => {
           </div>
         </div>
       </div>
+      {form && (
+        <div className={classes.submitted}>
+          <div className={classes.submit}>
+            <img src="/icons8-checkmark-48.png" alt="" />
+            <p>Form Submitted Successfully</p>
+          </div>
+        </div>
+      )}
     </>
   );
 };

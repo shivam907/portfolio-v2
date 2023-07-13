@@ -1,28 +1,30 @@
-import React from 'react'
-import DisplayFile from './displayFile'
+import React from "react";
+import DisplayFile from "./displayFile";
 const File1 = () => {
   return (
     <DisplayFile
-          list={[
-            "/**",
-            "* About me",
-            "* I have 5 years of еxperience in web",
-            "* development lorem ipsum dolor sit amet,",
-            "* consectetur adipiscing elit, sed do eiusmod",
-            "* tempor incididunt ut labore et dolore",
-            "* magna aliqua. Ut enim ad minim veniam,",
-            "* quis nostrud exercitation ullamco laboris",
-            "* nisi ut aliquip ex ea commodo consequat.",
-            "* Duis aute irure dolor in reprehenderit in",
-            "*",
-            "* Duis aute irure dolor in reprehenderit in",
-            "* voluptate velit esse cillum dolore eu fugiat",
-            "* nulla pariatur. Excepteur sint occaecat",
-            "* officia deserunt mollit anim id est laborum.",
-            "*/",
-          ]}
-        />
-  )
-}
+      list={[
+        "/**",
+        "* About me",
+        "* I have Shivam Kaushal",
+        "* I belong to Hoshiarpur, Punjab,",
+        "* I am a captivating individual,",
+        "* Driven by a desire to make a positive impact",
+        "* I possess a vibrant thirst for knowledge,",
+        "* I consistently deliver exceptional results.",
+        "* I am very consistent and Hardworking Person",
+        "* I am a natural problem-solver",
+        "* finding creative solutions to challenges.",
 
-export default File1
+        "* I am open-minded and embrace diversity,",
+        "* With a blend of passion and determination,",
+        "* I make a difference wherever I go. \n  \n",
+        // "* nulla pariatur. Excepteur sint occaecat",
+        // "* officia deserunt mollit anim id est laborum.",
+        "*/",
+      ]}
+    />
+  );
+};
+
+export default File1;

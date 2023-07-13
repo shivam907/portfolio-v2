@@ -1,9 +1,28 @@
 "use client";
 import React from "react";
 import classes from "./NavBar.module.css";
+
+import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
 const NavBar = () => {
-  const [active, setActive] = React.useState(0);
+  // const router = useRouter();
+  const searchParams = useSearchParams();
+  console.log(searchParams);
+  const pathname = usePathname();
+  console.log("path", pathname);
+  const [active, setActive] = React.useState(
+    pathname == "/about"
+      ? 1
+      : pathname == "/projects"
+      ? 2
+      : pathname == "/contact"
+      ? 3
+      : 0
+  );
+  // React.useEffect(()=>{
+
+  //   setActive(pathname == "/about" ? 1 : pathname == "/projects" ? 2 : pathname=="/contact"?3:0);
+  // },[pathname])
   return (
     <nav className={classes.nav}>
       <div className={classes.leftNavItems}>
@@ -52,17 +71,16 @@ const NavBar = () => {
         </div>
       </div>
       <Link href="/contact">
-
-      <div
-        className={`${classes.navLink} ${
-          active == 3 ? classes.navLinkActive : ""
-        }`}
-        onClick={() => {
-          setActive(3);
-        }}
-      >
-        _contact-me
-      </div>
+        <div
+          className={`${classes.navLink} ${
+            active == 3 ? classes.navLinkActive : ""
+          }`}
+          onClick={() => {
+            setActive(3);
+          }}
+        >
+          _contact-me
+        </div>
       </Link>
     </nav>
   );

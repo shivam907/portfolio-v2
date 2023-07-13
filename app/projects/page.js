@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import classes from "./project.module.css";
 import MyCodeComponent from "@/components/Code";
+import Link from "next/link";
 import DisplayFile from "@/components/displayFile";
 import File1 from "@/components/File1";
 import File2 from "@/components/File2";
@@ -123,50 +124,58 @@ const page = () => {
           <div className={classes.project}>
             <div className={classes.projNames}>
               <div className={classes.projName}>Project 1</div>
-              <div className={classes.projectName}>// _ui-animations</div>
+              <div className={classes.projectName}>// _audiohile-ecommerce</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj.png" alt="" />
+              <img src="/proj2.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>
-                  <div className={classes.view}>Live Demo</div>
-                  <div className={classes.imm}>
-                    <img src="/icons8-github.svg" alt="" />
-                    <div className={classes.cir}></div>
-                  </div>
+                  <Link href="https://lovely-gumption-003323.netlify.app/">
+                    <div className={classes.view}>Live Demo</div>
+                  </Link>
+                    <div className={classes.imm}>
+                  <Link href="https://github.com/shivam907/audiophile">
+                      <img src="/icons8-github.svg" alt="" />
+                  </Link>
+                      <div className={classes.cir}></div>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
           <div className={classes.project}>
             <div className={classes.projNames}>
-              <div className={classes.projName}>Project 1</div>
-              <div className={classes.projectName}>// _ui-animations</div>
+              <div className={classes.projName}>Project 2</div>
+              <div className={classes.projectName}>// _metaverse</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj.png" alt="" />
-              <div className={classes.projContent}>
-                <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
-                <div className={classes.btns}>
-                  <div className={classes.view}>Live Demo</div>
-                  <div className={classes.imm}>
-                    <img src="/icons8-github.svg" alt="" />
-                    <div className={classes.cir}></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={classes.project}>
-            <div className={classes.projNames}>
-              <div className={classes.projName}>Project 1</div>
-              <div className={classes.projectName}>// _ui-animations</div>
-            </div>
-            <div className={classes.projectBox}>
-              <img src="/proj.png" alt="" />
+              <img src="/proj3.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>
+                <div className={classes.btns}>
+                  <Link href="https://lovely-gumption-003323.netlify.app/">
+                    <div className={classes.view}>Live Demo</div>
+                  </Link>
+                  <Link href="https://github.com/shivam907/metaverse">
+                    <div className={classes.imm}>
+                      <img src="/icons8-github.svg" alt="" />
+                      <div className={classes.cir}></div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.project}>
+            <div className={classes.projNames}>
+              <div className={classes.projName}>Project 3</div>
+              <div className={classes.projectName}>// _snippet-saver</div>
+            </div>
+            <div className={classes.projectBox}>
+              <img src="/proj1.png" alt="" />
+              <div className={classes.projContent}>
+                <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>
                   <div className={classes.view}>Live Demo</div>
                   <div className={classes.imm}>
