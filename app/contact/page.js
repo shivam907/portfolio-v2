@@ -9,42 +9,15 @@ import File1 from "@/components/File1";
 import File2 from "@/components/File2";
 import File3 from "@/components/File3";
 const page = () => {
-  const [file, changeFile] = React.useState(File3);
-  const [folder1, changeFolder1] = React.useState(true);
-  const [folder2, changeFolder2] = React.useState(false);
-  const [folder3, changeFolder3] = React.useState(false);
-  const [fileActive, changeFileActive] = React.useState(1);
-  const fileNames = ["bio.md", "interests.md", "education.md"];
+  const [name, changeName] = React.useState("");
+  const [email, changeEmail] = React.useState("");
+  const [message, changeMessage] = React.useState("");
   let arr = [];
-  let listt = [
-    "/**",
-    "* About me",
-    "* I have 5 years of еxperience in web",
-    "* development lorem ipsum dolor sit amet,",
-    "* consectetur adipiscing elit, sed do eiusmod",
-    "* tempor incididunt ut labore et dolore",
-    "* magna aliqua. Ut enim ad minim veniam,",
-    "* quis nostrud exercitation ullamco laboris",
-    "* nisi ut aliquip ex ea commodo consequat.",
-    "* Duis aute irure dolor in reprehenderit in",
-    "*",
-    "* Duis aute irure dolor in reprehenderit in",
-    "* voluptate velit esse cillum dolore eu fugiat",
-    "* nulla pariatur. Excepteur sint occaecat",
-    "* officia deserunt mollit anim id est laborum.",
-    "*/",
-  ];
-  for (let i = 1; i <= listt.length; i++) {
+
+  for (let i = 1; i <= 12; i++) {
     arr.push(<div className={classes.number}>{i}</div>);
   }
-  let list = [];
-  listt.forEach((i) => {
-    list.push(<div className={classes.p}>{i}</div>);
-  });
 
-  React.useEffect(() => {
-    changeFile(fileActive == 1 ? File1 : fileActive == 2 ? File2 : File3);
-  }, [fileActive]);
   return (
     <>
       <div className={classes.leftBar}>
@@ -116,9 +89,7 @@ const page = () => {
       <div className={classes.contact}>
         <div className={classes.upperBar}>
           <div className={classes.fileOpened}>
-            <div className={classes.fileOpenedName}>
-              {fileNames[fileActive - 1]}
-            </div>
+            <div className={classes.fileOpenedName}>contact-me</div>
             <div className={classes.fileIcons}>
               <img src="/close-icon.png" alt="" />
             </div>
@@ -127,23 +98,108 @@ const page = () => {
         <div className={classes.contactData}>
           <div className={classes.inp1}>
             <label htmlFor="">_name:</label>
-            <input type="text" />
+            <input
+              type="text"
+              onChange={(e) => {
+                changeName(e.target.value);
+              }}
+            />
           </div>
           <div className={classes.inp1}>
-            <label htmlFor="">_name:</label>
-            <input type="email" />
+            <label htmlFor="">_email:</label>
+            <input
+              type="email"
+              onChange={(e) => {
+                changeEmail(e.target.value);
+              }}
+            />
           </div>
           <div className={classes.inp1}>
-            <label htmlFor="">_name:</label>
-            <textarea type="text" />
+            <label htmlFor="">_message:</label>
+            <textarea
+              type="text"
+              onChange={(e) => {
+                changeMessage(e.target.value);
+              }}
+            />
           </div>
-          <div className={classes.view}>Submit</div>
+          <div className={classes.view}>submit-message</div>
         </div>
       </div>
       <div className={classes.code}>
         <div className={classes.displayFile}>
           <div className={classes.numbers}>{...arr}</div>
-          <div class={classes.displayFileContent}>{...list}</div>
+          <div class={classes.displayFileContent}>
+            <div className={classes.p}>
+              <div className={classes.type}>const </div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}> button </div>
+              <div className={classes.space}></div>
+              <div className={classes.type}> = </div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>
+                {" "}
+                document.querySelector
+              </div>
+              (<div className={classes.data}>'#sendBtn'</div>);
+            </div>
+            <div className={classes.p}>
+              <div className={classes.space}></div>
+            </div>
+            <div className={classes.p}>
+              <div className={classes.type}>const</div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>message</div>
+              <div className={classes.space}></div>
+              <div className={classes.type}>=</div>
+              <div className={classes.space}></div>
+              {"{"}
+            </div>
+            <div className={classes.p}>
+              <div className={classes.space}></div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>name:</div>
+              <div className={classes.space}></div>
+              <div className={classes.data}>"{name}"</div>,
+            </div>
+            <div className={classes.p}>
+              <div className={classes.space}></div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>email:</div>
+              <div className={classes.space}></div>
+              <div className={classes.data}>"{email}"</div>,
+            </div>
+            <div className={classes.p}>
+              <div className={classes.space}></div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>message:</div>
+              <div className={classes.space}></div>
+              <div className={classes.data}>"{message}"</div>,
+            </div>
+            <div className={classes.p}>{"}"}</div>
+            <div className={classes.p}>
+              <div className={classes.variableName}>
+                button.addEventListener
+              </div>
+              (<div className={classes.data}>'click'</div>,
+              <div className={classes.space}></div>
+              ()
+              <div className={classes.space}></div>
+              <div className={classes.type}>{"=>"}</div>
+              <div className={classes.space}></div>
+              {"{"}
+            </div>
+            <div className={classes.p}>
+              <div className={classes.space}></div>
+              <div className={classes.space}></div>
+              <div className={classes.variableName}>form.send</div>(
+              <div className={classes.variableName}>message</div>
+              );
+            </div>
+            <div className={classes.p}>{"})"}</div>
+            {/* <div className={classes.p}>{i}</div>
+            <div className={classes.p}>{i}</div> */}
+          </div>
         </div>
       </div>
     </>

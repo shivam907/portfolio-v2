@@ -100,10 +100,11 @@
 
 .code {
   height: 100vh;
-  width: 70rem;
+  width: 85rem;
   justify-self: flex-end;
   display: flex;
   border-right: 1px solid #1e2d3d;
+  padding: 9rem 0;
   flex-direction: column;
 }
 .upperBar {
@@ -217,7 +218,7 @@
 .contact{
   display: flex;
   flex-direction: column;
-  width: 70rem;
+  width: 65rem;
 height: 100vh;
   border-right: 1px solid #1e2d3d;
 }
@@ -238,7 +239,7 @@ height: 100vh;
   color: #607b96;
 }
 .inp1 input, .inp1 textarea{
-  width: 50rem;
+  width: 45rem;
   padding: 1rem 2rem;
   background-color: #011221;
   border: 1px solid #607b96;
@@ -266,7 +267,7 @@ color: #607b96;
 }
 .number {
   color: #607b96;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .displayFileContent {
   display: flex;
@@ -275,10 +276,29 @@ color: #607b96;
 
   /* border-right: 1px solid #1e2d3d; */
 
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   gap: 1rem;
 }
 .p {
   color: #607b96;
   font-size: 1.8rem;
+  display: flex;
+  /* gap: 1rem; */
+}
+
+.type{
+  font-size: 2rem;
+  color: #C98BDF;
+}
+.variableName{
+  font-size: 2rem;
+  color: #5565E8;
+}
+.data{
+  font-size: 2rem;
+  color: #FEA55F;
+}
+.space{
+  content: '';
+  width: 1rem;
 }
