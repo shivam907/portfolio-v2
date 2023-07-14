@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={classes.rightHero}>
-        <img src="/terminal.png" alt="" />
+        <img className={classes.terminal} src="/terminal.png" alt="" />
         <img className={classes.blur} src="/Background Blurs.png" alt="" />
       </div>
     </div>

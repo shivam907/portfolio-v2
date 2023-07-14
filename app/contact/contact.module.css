@@ -350,3 +350,7 @@ color: #607b96;
 .none{
   display: none;
 }
+
+.inp1 input:focus, .inp1 textarea:focus{
+  outline: 1px solid #fff;
+}

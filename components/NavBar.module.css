@@ -43,10 +43,10 @@
 }
 .navLink:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: -0.4rem;
   content: "";
   display: block;
-  height: 2.8px;
+  height: 0.4rem;
   left: 50%;
   position: absolute;
   background: #fea55f;

@@ -88,9 +88,13 @@
   margin-left: 5rem;
   margin-right: -10rem;
 }
+.terminal{
+  width: 55rem;
+}
+
 .blur {
   position: absolute;
-  /* width: 100%; */
+  width: 110rem;
   top: -40%;
   z-index: -1;
   opacity: 75%;

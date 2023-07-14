@@ -3,7 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Fira Code";
-  font-size: 62.5%;
+  font-size: 0.55vw;
+  /* font-size: 62.5%; */
 }
 body {
   overflow: hidden;

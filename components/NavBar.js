@@ -55,7 +55,7 @@ const NavBar = () => {
                 _about-me
               </div>
             </Link>
-            <Link href="/projects">
+            <Link href="projects">
               <div
                 className={`${classes.navLink} ${
                   active == 2 ? classes.navLinkActive : ""
