@@ -171,7 +171,7 @@ const page = () => {
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>
                 <div className={classes.btns}>
-                  <Link href="https://lovely-gumption-003323.netlify.app/">
+                  <Link href="https://metaverse-henna.vercel.app/">
                     <div className={classes.view}>Live Demo</div>
                   </Link>
                   {/* <div className={classes.imm}> */}
