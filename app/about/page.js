@@ -19,7 +19,7 @@ const page = () => {
   const fileNames = ["bio.md", "interests.md", "education.md"];
   React.useEffect(() => {
     changeFile(fileActive == 1 ? File1 : fileActive == 2 ? File2 : File3);
-  }, [fileActive]);
+  }, [fileActive, file]);
   return (
     <>
       <div className={classes.leftBar}>
@@ -210,6 +210,8 @@ const page = () => {
             </div>
           </div>
         </div>
+        {/* {fileActive==1?File1:fileActive==2?File2:fileActive==3?File3:''} */}
+        {/* {fileActive} */}
         {file}
       </div>
       <div className={classes.snippets}>

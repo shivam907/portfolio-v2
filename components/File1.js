@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import DisplayFile from "./displayFile";
 const File1 = () => {
@@ -15,14 +16,12 @@ const File1 = () => {
         "* I am very consistent and Hardworking Person",
         "* I am a natural problem-solver",
         "* finding creative solutions to challenges.",
-
         "* I am open-minded and embrace diversity,",
         "* With a blend of passion and determination,",
-        "* I make a difference wherever I go. \n  \n",
-        // "* nulla pariatur. Excepteur sint occaecat",
-        // "* officia deserunt mollit anim id est laborum.",
+        "* I make a difference wherever I go.",
         "*/",
       ]}
+      len={1}
     />
   );
 };
