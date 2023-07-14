@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import DisplayFile from "./displayFile";
+import DisplayFile from "./DisplayFile";
 const File1 = () => {
   return (
     <DisplayFile
