@@ -331,3 +331,22 @@ color: #607b96;
 .rotated{
   transform: rotate(180deg);
 }
+.error{
+  border: 1px solid red !important;
+}
+
+.err{
+  color: red !important;
+}
+.label{
+  display: flex;
+  justify-content: space-between;
+}
+.label label:last-child{
+  font-size: 1.6rem !important;
+  font-weight: 300 !important;
+  align-self: flex-end;
+}
+.none{
+  display: none;
+}

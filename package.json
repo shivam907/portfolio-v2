@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "appwrite": "^11.0.0",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-code-blocks": "^0.1.0",

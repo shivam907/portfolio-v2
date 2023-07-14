@@ -2,6 +2,7 @@
 import React from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { Client, Databases } from 'appwrite';
 import classes from "./contact.module.css";
 import MyCodeComponent from "@/components/Code";
 import DisplayFile from "@/components/displayFile";
@@ -9,17 +10,75 @@ import File1 from "@/components/File1";
 import File2 from "@/components/File2";
 import File3 from "@/components/File3";
 const page = () => {
+  const client = new Client();
+
+const databases = new Databases(client);
+  client
+    .setEndpoint("https://cloud.appwrite.io/v1")
+    .setProject("645f463b27e283f3ea9d");
+  const [nameErr, changeNameErr] = React.useState(false)
+  const [emailErr, changeEmailErr] = React.useState(false)
+  const [messageErr, changeMessageErr] = React.useState(false)
+  const nameInput = React.useRef()
+  const emailInput = React.useRef()
+  const messageInput = React.useRef()
   const [name, changeName] = React.useState("");
   const [email, changeEmail] = React.useState("");
   const [message, changeMessage] = React.useState("");
   const [form, formSubmitted] = React.useState(false);
   const [workspace1, changeWorkspace1] = React.useState(true);
   const [workspace2, changeWorkspace2] = React.useState(true);
-  const formHandler = () => {
-    formSubmitted(true);
-    changeName("");
-    changeEmail("");
-    changeMessage("");
+  const formHandler = async() => {
+    // formSubmitted(true);
+    // changeEmail("");
+    // changeMessage("");
+    // console.log(nameInput.current.value);
+    let a=0;
+    if(nameInput.current.value.length<1){
+      changeNameErr(true)
+    }
+    else{
+      a+=1
+      changeNameErr(false)
+    }
+    if(emailInput.current.value.length>1 && emailInput.current.value.includes('@') && emailInput.current.value.includes('.')){
+      
+      changeEmailErr(false)
+      a+=1
+    }
+    else{
+      changeEmailErr(true)
+    }
+    if(messageInput.current.value.length>1){
+      changeMessageErr(false)
+      a+=1
+    }
+    else{
+      changeMessageErr(true)
+    }
+    if(a==3){
+      const promise = databases.createDocument(
+        "64b1ad91134c9cd6a637",
+        "64b1add1590711ef1bf7",
+        Math.random().toString(),
+        {name:name,
+        email:email,
+      message:message}
+      );
+
+      promise.then(
+        function (response) {
+          console.log(response); // Success
+        },
+        function (error) {
+          console.log(error); // Failure
+        }
+      );
+      formSubmitted(true);
+      changeName('');
+      changeEmail('');
+      changeMessage('');
+    }
   };
   let arr = [];
   React.useEffect(() => {
@@ -144,19 +203,31 @@ const page = () => {
         </div>
         <div className={classes.contactData}>
           <div className={classes.inp1}>
-            <label htmlFor="">_name:</label>
+          <div className={classes.label}>
+
+            <label className={`${nameErr? classes.err:''}`} htmlFor="">_name:</label>
+            <label className={`${nameErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
+          </div>
             <input
+            className={nameErr?classes.error:''}
               type="text"
               value={name}
+              ref={nameInput}
               onChange={(e) => {
                 changeName(e.target.value);
               }}
             />
           </div>
           <div className={classes.inp1}>
-            <label htmlFor="">_email:</label>
+          <div className={classes.label}>
+
+            <label className={`${emailErr? classes.err:''}`} htmlFor="">_email:</label>
+            <label className={`${emailErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
+          </div>
             <input
+            className={emailErr?classes.error:''}
               type="email"
+              ref={emailInput}
               value={email}
               onChange={(e) => {
                 changeEmail(e.target.value);
@@ -164,9 +235,15 @@ const page = () => {
             />
           </div>
           <div className={classes.inp1}>
-            <label htmlFor="">_message:</label>
+          <div className={classes.label}>
+
+            <label className={`${messageErr? classes.err:''}`} htmlFor="">_message:</label>
+            <label className={`${messageErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
+          </div>
             <textarea
+            className={messageErr?classes.error:''}
               type="text"
+              ref={messageInput}
               value={message}
               onChange={(e) => {
                 changeMessage(e.target.value);
