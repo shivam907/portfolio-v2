@@ -1,14 +1,7 @@
 "use client";
 import React from "react";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import { Client, Databases } from 'appwrite';
 import classes from "./contact.module.css";
-import MyCodeComponent from "@/components/Code";
-import DisplayFile from "@/components/displayFile";
-import File1 from "@/components/File1";
-import File2 from "@/components/File2";
-import File3 from "@/components/File3";
 const page = () => {
   const client = new Client();
 

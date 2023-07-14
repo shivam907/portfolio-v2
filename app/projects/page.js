@@ -1,14 +1,10 @@
 "use client";
 import React from "react";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import classes from "./project.module.css";
-import MyCodeComponent from "@/components/Code";
 import Link from "next/link";
-import DisplayFile from "@/components/displayFile";
-import File1 from "@/components/File1";
-import File2 from "@/components/File2";
-import File3 from "@/components/File3";
+import File1 from "../../components/File1";
+import File2 from "../../components/File2";
+import File3 from "../../components/File3";
 const page = () => {
   const [file, changeFile] = React.useState(File3);
   const [folder1, changeFolder1] = React.useState(true);
