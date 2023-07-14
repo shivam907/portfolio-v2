@@ -3,13 +3,16 @@ import React from "react";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import classes from "./about.module.css";
+import EmptyFile from "@/components/EmptyFile";
 import MyCodeComponent from "@/components/Code";
 import DisplayFile from "@/components/displayFile";
 import File1 from "@/components/File1";
 import File2 from "@/components/File2";
 import File3 from "@/components/File3";
+import emptyFile from "@/components/EmptyFile";
 const page = () => {
   const [file, changeFile] = React.useState(File3);
+  
   const [folder1, changeFolder1] = React.useState(true);
   const [folder2, changeFolder2] = React.useState(false);
   const [workspace1, changeworkspace1] = React.useState(true);
@@ -18,7 +21,7 @@ const page = () => {
   const [fileActive, changeFileActive] = React.useState(1);
   const fileNames = ["bio.md", "interests.md", "education.md"];
   React.useEffect(() => {
-    changeFile(fileActive == 1 ? File1 : fileActive == 2 ? File2 : File3);
+    changeFile(fileActive == 1 ? File1 : fileActive == 2 ? File2 : fileActive==3? File3:EmptyFile);
   }, [fileActive]);
   return (
     <>
@@ -200,16 +203,16 @@ const page = () => {
         </div>
       </div>
       <div className={classes.code}>
-        <div className={classes.upperBar}>
+        {fileActive!=0 && <div className={classes.upperBar}>
           <div className={classes.fileOpened}>
             <div className={classes.fileOpenedName}>
               {fileNames[fileActive - 1]}
             </div>
             <div className={classes.fileIcons}>
-              <img src="/close-icon.png" alt="" />
+              <img src="/close-icon.png" alt="" className={classes.close} onClick={()=>{changeFileActive(0)}}/>
             </div>
           </div>
-        </div>
+        </div>}
         {/* {fileActive==1?File1:fileActive==2?File2:fileActive==3?File3:''} */}
         {/* {fileActive} */}
         {file}

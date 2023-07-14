@@ -13,7 +13,7 @@
 .info {
   height: 100vh;
   /* width: fit-content; */
-  width: 28.3rem;
+  min-width: 28.8rem;
   border-right: 0.1rem solid #1e2d3d;
   /* padding: 1rem 0; */
   display: flex;
@@ -116,7 +116,7 @@
 .fileOpened {
   display: flex;
   gap: 3rem;
-  padding: 1.5rem 2.5rem;
+  padding: 0.9rem 2.5rem;
   border-right: 1px solid #1e2d3d;
   align-items: center;
 }

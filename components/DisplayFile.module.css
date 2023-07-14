@@ -30,3 +30,15 @@
   color: #607b96;
   font-size: 1.8rem;
 }
+.empty{
+  color: #607b96;
+  /* background-color: aliceblue; */
+  font-size: 1.8rem;
+  width: 65rem;
+  height: 70vh;
+  z-index: 9;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
