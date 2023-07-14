@@ -281,7 +281,7 @@ color: #607b96;
 }
 .p {
   color: #607b96;
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   /* gap: 1rem; */
 }
@@ -328,3 +328,6 @@ color: #607b96;
   font-size: 2rem;
 }
 
+.rotated{
+  transform: rotate(180deg);
+}

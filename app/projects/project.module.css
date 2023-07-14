@@ -30,6 +30,8 @@
   width: 100%;
 
   border-bottom: 0.1rem solid #1e2d3d;
+  border-left: 0.1rem solid transparent;
+  border-right: 0.1rem solid transparent;
   border-top: 0.1rem solid #1e2d3d;
   padding: 1rem 2rem;
   display: flex;
@@ -338,12 +340,15 @@
 
 .imm{
   position: relative;
+  align-self: flex-end;
 }
-
+.imm img{
+  align-self: flex-end;
+}
 .cir{
   display: none;
   position: absolute;
-  top: 0.35rem;
+  top: -2rem;
   left: 0.3rem;
   width: 2.6rem;
   height: 2.45rem;
@@ -356,4 +361,8 @@
   display: block;
   cursor: pointer;
 
+}
+
+.rotated{
+  transform: rotate(180deg);
 }

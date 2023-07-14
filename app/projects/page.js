@@ -14,6 +14,9 @@ const page = () => {
   const [folder1, changeFolder1] = React.useState(true);
   const [folder2, changeFolder2] = React.useState(false);
   const [folder3, changeFolder3] = React.useState(false);
+
+  const [workspace, changeWorkspace] = React.useState(true);
+
   const [fileActive, changeFileActive] = React.useState(1);
   const fileNames = ["bio.md", "interests.md", "education.md"];
   React.useEffect(() => {
@@ -31,84 +34,95 @@ const page = () => {
       </div>
       <div className={classes.info}>
         <div className={classes.personalInfo}>
-          <div className={classes.heading}>
+          <div
+            className={classes.heading}
+            onClick={() => {
+              changeWorkspace(workspace ? false : true);
+            }}
+          >
             <div className={classes.icon}>
-              <img src="/icon.png" alt="" />
+              <img
+                className={workspace ? "" : classes.rotated}
+                src="/icon.png"
+                alt=""
+              />
             </div>
-            <div className={classes.name}>personal-info</div>
+            <div className={classes.name}>my-projects</div>
           </div>
-          <div className={classes.select}>
-            <div className={classes.option}>
-              <label className={classes.check}>
-                <input
-                  type="checkbox"
-                  className={classes.checkbox}
-                  // checked="checked"
-                />
-              </label>
+          {workspace && (
+            <div className={classes.select}>
+              <div className={classes.option}>
+                <label className={classes.check}>
+                  <input
+                    type="checkbox"
+                    className={classes.checkbox}
+                    // checked="checked"
+                  />
+                </label>
 
-              <div className={classes.selectOption}>
-                <img src="/html.png" alt="" />
+                <div className={classes.selectOption}>
+                  <img src="/html.png" alt="" />
+                </div>
+                <div className={classes.optionName}>HTML</div>
               </div>
-              <div className={classes.optionName}>HTML</div>
-            </div>
-            <div className={classes.option}>
-              <label className={classes.check}>
-                <input
-                  type="checkbox"
-                  className={classes.checkbox}
-                  // checked="checked"
-                />
-              </label>
+              <div className={classes.option}>
+                <label className={classes.check}>
+                  <input
+                    type="checkbox"
+                    className={classes.checkbox}
+                    // checked="checked"
+                  />
+                </label>
 
-              <div className={classes.selectOption}>
-                <img src="/css.png" alt="" />
+                <div className={classes.selectOption}>
+                  <img src="/css.png" alt="" />
+                </div>
+                <div className={classes.optionName}>CSS</div>
               </div>
-              <div className={classes.optionName}>CSS</div>
-            </div>
-            <div className={classes.option}>
-              <label className={classes.check}>
-                <input
-                  type="checkbox"
-                  className={classes.checkbox}
-                  // checked="checked"
-                />
-              </label>
+              <div className={classes.option}>
+                <label className={classes.check}>
+                  <input
+                    type="checkbox"
+                    className={classes.checkbox}
+                    // checked="checked"
+                  />
+                </label>
 
-              <div className={classes.selectOption}>
-                <img src="/react.png" alt="" />
+                <div className={classes.selectOption}>
+                  <img src="/react.png" alt="" />
+                </div>
+                <div className={classes.optionName}>React Js</div>
               </div>
-              <div className={classes.optionName}>React Js</div>
-            </div>
-            <div className={classes.option}>
-              <label className={classes.check}>
-                <input
-                  type="checkbox"
-                  className={classes.checkbox}
-                  // checked="checked"
-                />
-              </label>
+              <div className={classes.option}>
+                <label className={classes.check}>
+                  <input
+                    type="checkbox"
+                    className={classes.checkbox}
+                    // checked="checked"
+                  />
+                </label>
 
-              <div className={classes.selectOption}>
-                <img className={classes.node} src="/node.png" alt="" />
+                <div className={classes.selectOption}>
+                  <img className={classes.node} src="/node.png" alt="" />
+                </div>
+                <div className={classes.optionName}>Node Js</div>
               </div>
-              <div className={classes.optionName}>Node Js</div>
-            </div>
-            <div className={classes.option}>
-              <label className={classes.check}>
-                <input
-                  type="checkbox"
-                  className={classes.checkbox}
-                  // checked="checked"
-                />
-              </label>
+              <div className={classes.option}>
+                <label className={classes.check}>
+                  <input
+                    type="checkbox"
+                    className={classes.checkbox}
+                    // checked="checked"
+                  />
+                </label>
 
-              <div className={classes.selectOption}>
-                <img src="/js.png" alt="" />
+                <div className={classes.selectOption}>
+                  <img src="/js.png" alt="" />
+                </div>
+                <div className={classes.optionName}>JavaScript</div>
               </div>
-              <div className={classes.optionName}>JavaScript</div>
             </div>
-          </div>
+          )}
         </div>
       </div>
       <div className={classes.code}>
@@ -127,19 +141,22 @@ const page = () => {
               <div className={classes.projectName}>// _audiohile-ecommerce</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj2.png" alt="" />
+              <img src="/proj1.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>
                   <Link href="https://lovely-gumption-003323.netlify.app/">
                     <div className={classes.view}>Live Demo</div>
                   </Link>
-                    <div className={classes.imm}>
-                  <Link href="https://github.com/shivam907/audiophile">
-                      <img src="/icons8-github.svg" alt="" />
+                  <Link
+                    className={classes.imm}
+                    href="https://github.com/shivam907/audiophile"
+                  >
+                    {/* <div className={classes.imm}> */}
+                    <img src="/icons8-github.svg" alt="" />
+                    <div className={classes.cir}></div>
+                    {/* </div> */}
                   </Link>
-                      <div className={classes.cir}></div>
-                    </div>
                 </div>
               </div>
             </div>
@@ -150,18 +167,21 @@ const page = () => {
               <div className={classes.projectName}>// _metaverse</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj3.png" alt="" />
+              <img src="/proj2.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>
                 <div className={classes.btns}>
                   <Link href="https://lovely-gumption-003323.netlify.app/">
                     <div className={classes.view}>Live Demo</div>
                   </Link>
-                  <Link href="https://github.com/shivam907/metaverse">
-                    <div className={classes.imm}>
-                      <img src="/icons8-github.svg" alt="" />
-                      <div className={classes.cir}></div>
-                    </div>
+                  {/* <div className={classes.imm}> */}
+                  <Link
+                    className={classes.imm}
+                    href="https://github.com/shivam907/metaverse"
+                  >
+                    <img src="/icons8-github.svg" alt="" />
+                    <div className={classes.cir}></div>
+                    {/* </div> */}
                   </Link>
                 </div>
               </div>
@@ -173,7 +193,7 @@ const page = () => {
               <div className={classes.projectName}>// _snippet-saver</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj1.png" alt="" />
+              <img src="/proj3.png" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>

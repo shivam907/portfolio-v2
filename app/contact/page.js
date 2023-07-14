@@ -13,6 +13,8 @@ const page = () => {
   const [email, changeEmail] = React.useState("");
   const [message, changeMessage] = React.useState("");
   const [form, formSubmitted] = React.useState(false);
+  const [workspace1, changeWorkspace1] = React.useState(true);
+  const [workspace2, changeWorkspace2] = React.useState(true);
   const formHandler = () => {
     formSubmitted(true);
     changeName("");
@@ -26,7 +28,7 @@ const page = () => {
     }, 5000);
   }, [form]);
 
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 9; i++) {
     arr.push(<div className={classes.number}>{i}</div>);
   }
 
@@ -42,66 +44,99 @@ const page = () => {
       </div>
       <div className={classes.info}>
         <div className={classes.contacts}>
-          <div className={classes.heading}>
+          <div
+            className={classes.heading}
+            onClick={() => {
+              changeWorkspace1(workspace1 ? false : true);
+            }}
+          >
             <div className={classes.icon}>
-              <img src="/icon.png" alt="" />
+              <img
+                className={workspace1 ? "" : classes.rotated}
+                src="/icon.png"
+                alt=""
+              />
             </div>
             <div className={classes.name}>contacts</div>
           </div>
-          <div className={classes.folders}>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/mail-icon.png" alt="" />
+          {workspace1 && (
+            <div className={classes.folders}>
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/mail-icon.png" alt="" />
+                </div>
+                <div className={classes.fileName}>shivam@academer.co</div>
               </div>
-              <div className={classes.fileName}>shivam@academer.co</div>
-            </div>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/phone-icon.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/phone-icon.png" alt="" />
+                </div>
+                <div className={classes.fileName}>+91 8968969929</div>
               </div>
-              <div className={classes.fileName}>+91 8968969929</div>
+              <div className={`${classes.fileActive} ${classes.folderHead}`}>
+                <div className={classes.fileIcon}>
+                  <img src="/markdown.png" alt="" />
+                </div>
+                <div className={classes.fileName}>contact-me.md</div>
+              </div>
             </div>
-          </div>
+          )}
         </div>
-        <div className={classes.contacts}>
-          <div className={classes.heading}>
+        <div
+          className={classes.contacts}
+          onClick={() => {
+            changeWorkspace2(workspace2 ? false : true);
+          }}
+        >
+          <div
+            className={classes.heading}
+            onClick={() => {
+              changeWorkspace2(workspace2 ? false : true);
+            }}
+          >
             <div className={classes.icon}>
-              <img src="/icon.png" alt="" />
+              <img
+                className={workspace2 ? "" : classes.rotated}
+                src="/icon.png"
+                alt=""
+              />
             </div>
             <div className={classes.name}>find-me-also-in</div>
           </div>
-          <div className={classes.folders}>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/redirect.png" alt="" />
+          {workspace2 && (
+            <div className={classes.folders}>
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/redirect.png" alt="" />
+                </div>
+                <div className={classes.fileName}>Stackoverflow</div>
               </div>
-              <div className={classes.fileName}>Stackoverflow</div>
-            </div>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/redirect.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/redirect.png" alt="" />
+                </div>
+                <div className={classes.fileName}>Leetcode</div>
               </div>
-              <div className={classes.fileName}>Leetcode</div>
-            </div>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/redirect.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/redirect.png" alt="" />
+                </div>
+                <div className={classes.fileName}>Linkedin</div>
               </div>
-              <div className={classes.fileName}>Linkedin</div>
-            </div>
-            <div className={classes.folderHead}>
-              <div className={classes.fileIcon}>
-                <img src="/redirect.png" alt="" />
+              <div className={classes.folderHead}>
+                <div className={classes.fileIcon}>
+                  <img src="/redirect.png" alt="" />
+                </div>
+                <div className={classes.fileName}>Instagram</div>
               </div>
-              <div className={classes.fileName}>Instagram</div>
             </div>
-          </div>
+          )}
         </div>
       </div>
       <div className={classes.contact}>
         <div className={classes.upperBar}>
           <div className={classes.fileOpened}>
-            <div className={classes.fileOpenedName}>contact-me</div>
+            <div className={classes.fileOpenedName}>contact-me.md</div>
             <div className={classes.fileIcons}>
               <img src="/close-icon.png" alt="" />
             </div>
@@ -160,9 +195,9 @@ const page = () => {
               </div>
               (<div className={classes.data}>'#sendBtn'</div>);
             </div>
-            <div className={classes.p}>
+            {/* <div className={classes.p}>
               <div className={classes.space}></div>
-            </div>
+            </div> */}
             <div className={classes.p}>
               <div className={classes.type}>const</div>
               <div className={classes.space}></div>
