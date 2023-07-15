@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className={classes.lower}>
           <div className={classes.comment}>
-            // complete the game to continue
+            // checkout my projects section to see my work
           </div>
           <div className={classes.comment}>
             // you can also see it on my github page
