@@ -39,7 +39,7 @@ const page = () => {
             <div className={classes.icon}>
               <img
                 className={workspace ? "" : classes.rotated}
-                src="/icon.png"
+                src="/icon.webp"
                 alt=""
               />
             </div>
@@ -57,7 +57,7 @@ const page = () => {
                 </label>
 
                 <div className={classes.selectOption}>
-                  <img src="/html.png" alt="" />
+                  <img src="/html.webp" alt="" />
                 </div>
                 <div className={classes.optionName}>HTML</div>
               </div>
@@ -71,7 +71,7 @@ const page = () => {
                 </label>
 
                 <div className={classes.selectOption}>
-                  <img src="/css.png" alt="" />
+                  <img src="/css.webp" alt="" />
                 </div>
                 <div className={classes.optionName}>CSS</div>
               </div>
@@ -85,7 +85,7 @@ const page = () => {
                 </label>
 
                 <div className={classes.selectOption}>
-                  <img src="/react.png" alt="" />
+                  <img src="/react.webp" alt="" />
                 </div>
                 <div className={classes.optionName}>React Js</div>
               </div>
@@ -99,7 +99,7 @@ const page = () => {
                 </label>
 
                 <div className={classes.selectOption}>
-                  <img className={classes.node} src="/node.png" alt="" />
+                  <img className={classes.node} src="/node.webp" alt="" />
                 </div>
                 <div className={classes.optionName}>Node Js</div>
               </div>
@@ -113,7 +113,7 @@ const page = () => {
                 </label>
 
                 <div className={classes.selectOption}>
-                  <img src="/js.png" alt="" />
+                  <img src="/js.webp" alt="" />
                 </div>
                 <div className={classes.optionName}>JavaScript</div>
               </div>
@@ -126,7 +126,7 @@ const page = () => {
           <div className={classes.fileOpened}>
             <div className={classes.fileOpenedName}>Projects.md</div>
             <div className={classes.fileIcons}>
-              <img src="/close-icon.png" alt="" />
+              <img src="/close-icon.webp" alt="" />
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ const page = () => {
               <div className={classes.projectName}>// _audiohile-ecommerce</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj1.png" alt="" />
+              <img src="/proj1.webp" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>
@@ -163,7 +163,7 @@ const page = () => {
               <div className={classes.projectName}>// _metaverse</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj2.png" alt="" />
+              <img src="/proj2.webp" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>
                 <div className={classes.btns}>
@@ -189,7 +189,7 @@ const page = () => {
               <div className={classes.projectName}>// _snippet-saver</div>
             </div>
             <div className={classes.projectBox}>
-              <img src="/proj3.png" alt="" />
+              <img src="/proj3.webp" alt="" />
               <div className={classes.projContent}>
                 <p>Duis aute irure dolor in velit esse cillum dolore.</p>{" "}
                 <div className={classes.btns}>

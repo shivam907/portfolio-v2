@@ -21,10 +21,10 @@ const page = () => {
   return (
     <>
       <div className={classes.leftBar}>
-        <img className={classes.img1} src="/personal-info-icon.svg" alt="" />
+        <img className={classes.img1} src="/personal-info-icon.webp" alt="" />
         <img
           className={classes.img2}
-          src="/professional-info-icon.svg"
+          src="/professional-info-icon.webp"
           alt=""
         />
       </div>
@@ -39,7 +39,7 @@ const page = () => {
             <div className={classes.icon}>
               <img
                 className={`${workspace1 == false ? classes.rotated : ""}`}
-                src="/icon.png"
+                src="/icon.webp"
                 alt=""
               />
             </div>
@@ -53,10 +53,10 @@ const page = () => {
                   onClick={() => changeFolder1(folder1 ? false : true)}
                 >
                   <div className={`${folder1 ? classes.folderIconActive : ""}`}>
-                    <img src="/folderIcon.png" alt="" />
+                    <img src="/folderIcon.webp" alt="" />
                   </div>
                   <div className={classes.folderImage}>
-                    <img src="/folder1.png" alt="" />
+                    <img src="/folder1.webp" alt="" />
                   </div>
                   <div className={classes.folderName}>bio</div>
                 </div>
@@ -71,13 +71,13 @@ const page = () => {
                       }}
                     >
                       <div className={classes.fileIcon}>
-                        <img src="/markdown.png" alt="" />
+                        <img src="/markdown.webp" alt="" />
                       </div>
                       <div className={classes.fileName}>bio.md</div>
                     </div>
                     {/* <div className={`${fileActive==1?classes.fileActive:''} ${classes.file}`} onClick=()=>{changeFileActive(1)}>
                   <div className={classes.fileIcon}>
-                    <img src="/markdown.png" alt="" />
+                    <img src="/markdown.webp" alt="" />
                   </div>
                   <div className={classes.fileName}>high-school</div>
                 </div> */}
@@ -90,10 +90,10 @@ const page = () => {
                   onClick={() => changeFolder2(folder2 ? false : true)}
                 >
                   <div className={`${folder2 ? classes.folderIconActive : ""}`}>
-                    <img src="/folderIcon.png" alt="" />
+                    <img src="/folderIcon.webp" alt="" />
                   </div>
                   <div className={classes.folderImage}>
-                    <img src="/folder2.png" alt="" />
+                    <img src="/folder2.webp" alt="" />
                   </div>
                   <div className={classes.folderName}>interests</div>
                 </div>
@@ -102,7 +102,7 @@ const page = () => {
                   <div className={classes.folderContent}>
                     {/* <div className={`${fileActive==1?classes.fileActive:''} ${classes.file}`} onClick=()=>{changeFileActive(1)}>
                   <div className={classes.fileIcon}>
-                    <img src="/markdown.png" alt="" />
+                    <img src="/markdown.webp" alt="" />
                   </div>
                   <div className={classes.fileName}>high-school</div>
                 </div> */}
@@ -115,7 +115,7 @@ const page = () => {
                       }}
                     >
                       <div className={classes.fileIcon}>
-                        <img src="/markdown.png" alt="" />
+                        <img src="/markdown.webp" alt="" />
                       </div>
                       <div className={classes.fileName}>interests.md</div>
                     </div>
@@ -128,10 +128,10 @@ const page = () => {
                   onClick={() => changeFolder3(folder3 ? false : true)}
                 >
                   <div className={`${folder3 ? classes.folderIconActive : ""}`}>
-                    <img src="/folderIcon.png" alt="" />
+                    <img src="/folderIcon.webp" alt="" />
                   </div>
                   <div className={classes.folderImage}>
-                    <img src="/folder3.png" alt="" />
+                    <img src="/folder3.webp" alt="" />
                   </div>
                   <div className={classes.folderName}>education</div>
                 </div>
@@ -140,7 +140,7 @@ const page = () => {
                   <div className={classes.folderContent}>
                     {/* <div className={`${fileActive==1?classes.fileActive:''} ${classes.file}`} onClick=()=>{changeFileActive(1)}>
                   <div className={classes.fileIcon}>
-                    <img src="/markdown.png" alt="" />
+                    <img src="/markdown.webp" alt="" />
                   </div>
                   <div className={classes.fileName}>high-school</div>
                 </div> */}
@@ -153,7 +153,7 @@ const page = () => {
                       }}
                     >
                       <div className={classes.fileIcon}>
-                        <img src="/markdown.png" alt="" />
+                        <img src="/markdown.webp" alt="" />
                       </div>
                       <div className={classes.fileName}>education.md</div>
                     </div>
@@ -173,7 +173,7 @@ const page = () => {
             <div className={classes.icon}>
               <img
                 className={`${workspace2 == false ? classes.rotated : ""}`}
-                src="/icon.png"
+                src="/icon.webp"
                 alt=""
               />
             </div>
@@ -183,13 +183,13 @@ const page = () => {
             <div className={classes.folders}>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/mail-icon.png" alt="" />
+                  <img src="/mail-icon.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>shivam@academer.co</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/phone-icon.png" alt="" />
+                  <img src="/phone-icon.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>+91 8968969929</div>
               </div>
@@ -204,7 +204,7 @@ const page = () => {
               {fileNames[fileActive - 1]}
             </div>
             <div className={classes.fileIcons}>
-              <img src="/close-icon.png" alt="" className={classes.close} onClick={()=>{changeFileActive(0)}}/>
+              <img src="/close-icon.webp" alt="" className={classes.close} onClick={()=>{changeFileActive(0)}}/>
             </div>
           </div>
         </div>}
@@ -219,7 +219,7 @@ const page = () => {
             <div className={classes.codeSnippetsHead}>
               <div className={classes.profile}>
                 <div className={classes.profileImg}>
-                  <img src="/profile.png" alt="" />
+                  <img src="/profile.webp" alt="" />
                 </div>
                 <div className={classes.profileData}>
                   <div className={classes.profileName}>Shivam907</div>
@@ -230,11 +230,11 @@ const page = () => {
               </div>
               <div className={classes.details}>
                 <div className={classes.detail1}>
-                  <img src="/comments-icon.png" alt="" />
+                  <img src="/comments-icon.webp" alt="" />
                   <p className={classes.detailText}>details</p>
                 </div>
                 <div className={classes.detail1}>
-                  <img src="Star.png" alt="" />
+                  <img src="Star.webp" alt="" />
                   <p className={classes.detailText}>3 stars</p>
                 </div>
               </div>
@@ -249,14 +249,14 @@ const page = () => {
                         }
 }`}
               /> */}
-              <img src="/codeBlock.png" alt="" />
+              <img src="/codeBlock.webp" alt="" />
             </div>
           </div>
           <div className={classes.codeSnippetsBox}>
             <div className={classes.codeSnippetsHead}>
               <div className={classes.profile}>
                 <div className={classes.profileImg}>
-                  <img src="/profile.png" alt="" />
+                  <img src="/profile.webp" alt="" />
                 </div>
                 <div className={classes.profileData}>
                   <div className={classes.profileName}>Shivam907</div>
@@ -267,11 +267,11 @@ const page = () => {
               </div>
               <div className={classes.details}>
                 <div className={classes.detail1}>
-                  <img src="/comments-icon.png" alt="" />
+                  <img src="/comments-icon.webp" alt="" />
                   <p className={classes.detailText}>details</p>
                 </div>
                 <div className={classes.detail1}>
-                  <img src="Star.png" alt="" />
+                  <img src="Star.webp" alt="" />
                   <p className={classes.detailText}>3 stars</p>
                 </div>
               </div>
@@ -286,7 +286,7 @@ const page = () => {
                         }
 }`}
               /> */}
-              <img src="/codeBlock.png" alt="" />
+              <img src="/codeBlock.webp" alt="" />
             </div>
           </div>
         </div>

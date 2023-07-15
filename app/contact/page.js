@@ -87,10 +87,10 @@ const databases = new Databases(client);
   return (
     <>
       <div className={classes.leftBar}>
-        <img className={classes.img1} src="/personal-info-icon.svg" alt="" />
+        <img className={classes.img1} src="/personal-info-icon.webp" alt="" />
         <img
           className={classes.img2}
-          src="/professional-info-icon.svg"
+          src="/professional-info-icon.webp"
           alt=""
         />
       </div>
@@ -105,7 +105,7 @@ const databases = new Databases(client);
             <div className={classes.icon}>
               <img
                 className={workspace1 ? "" : classes.rotated}
-                src="/icon.png"
+                src="/icon.webp"
                 alt=""
               />
             </div>
@@ -115,19 +115,19 @@ const databases = new Databases(client);
             <div className={classes.folders}>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/mail-icon.png" alt="" />
+                  <img src="/mail-icon.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>shivam@academer.co</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/phone-icon.png" alt="" />
+                  <img src="/phone-icon.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>+91 8968969929</div>
               </div>
               <div className={`${classes.fileActive} ${classes.folderHead}`}>
                 <div className={classes.fileIcon}>
-                  <img src="/markdown.png" alt="" />
+                  <img src="/markdown.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>contact-me.md</div>
               </div>
@@ -149,7 +149,7 @@ const databases = new Databases(client);
             <div className={classes.icon}>
               <img
                 className={workspace2 ? "" : classes.rotated}
-                src="/icon.png"
+                src="/icon.webp"
                 alt=""
               />
             </div>
@@ -159,25 +159,25 @@ const databases = new Databases(client);
             <div className={classes.folders}>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/redirect.png" alt="" />
+                  <img src="/redirect.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>Stackoverflow</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/redirect.png" alt="" />
+                  <img src="/redirect.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>Leetcode</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/redirect.png" alt="" />
+                  <img src="/redirect.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>Linkedin</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
-                  <img src="/redirect.png" alt="" />
+                  <img src="/redirect.webp" alt="" />
                 </div>
                 <div className={classes.fileName}>Instagram</div>
               </div>
@@ -190,7 +190,7 @@ const databases = new Databases(client);
           <div className={classes.fileOpened}>
             <div className={classes.fileOpenedName}>contact-me.md</div>
             <div className={classes.fileIcons}>
-              <img src="/close-icon.png" alt="" />
+              <img src="/close-icon.webp" alt="" />
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@ const databases = new Databases(client);
       {form && (
         <div className={classes.submitted}>
           <div className={classes.submit}>
-            <img src="/icons8-checkmark-48.png" alt="" />
+            <img src="/icons8-checkmark-48.webp" alt="" />
             <p>Form Submitted Successfully</p>
           </div>
         </div>
