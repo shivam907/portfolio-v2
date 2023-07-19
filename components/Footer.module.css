@@ -31,7 +31,11 @@
   position: relative;
   display: inline-block;
 }
-.footerLink img {
+.github img {
+width: 5rem;
+height: 5rem;
+}
+.footerLink img{
   width: 3rem;
 }
 .github {
