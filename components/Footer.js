@@ -16,6 +16,12 @@ const Footer = () => {
             <img src="/icons8-linkedin.webp" alt="" />
           </Link>
         </div>
+        <div className={classes.footerLink}>
+        
+        <a href="https://meet.google.com/qyh-yrpy-ojr?authuser=1" target="_black">
+            <img src="/icons8-google-meet-26.png" alt="" />
+          </a>
+        </div>
       </div>
       <div className={classes.github}>
         <Link href="https://github.com/shivam907">
