@@ -6,6 +6,9 @@
   font-size: 0.55vw;
   /* font-size: 62.5%; */
 }
+html,body{
+  overflow: hidden !important;
+}
 body {
   overflow: hidden;
   background-color: #011627;
