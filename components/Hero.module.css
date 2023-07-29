@@ -17,6 +17,7 @@
 .upper {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1rem;
 }
 .intro {
@@ -61,6 +62,11 @@
   font-size: 1.8rem;
   color: #607b96;
 }
+.comment1 {
+  display: none;
+  font-size: 1.8rem;
+  color: #607b96;
+}
 .gitlink {
   display: flex;
   gap: 1rem;
@@ -99,4 +105,91 @@
   z-index: -1;
   opacity: 75%;
   left: -45%;
+}
+.blur1 {
+  display: none;
+  position: absolute;
+  width: 110rem;
+  top: -40%;
+  z-index: -1;
+  opacity: 75%;
+  left: -45%;
+}
+.br{
+  display: none;
+}
+.rest2{
+  display: none;
+}
+.rest{
+  font-size: 1.6rem;
+  display: inline;
+}
+
+@media screen and (max-width:750px) {
+
+  .rightHero{
+    display: none;
+  }
+  .blur1{
+    display: block;
+  }
+  .hero{
+    display: flex;
+    width: 80vw;
+  }
+  .intro{
+    font-size: 18px;
+  }
+  .name{
+    font-size: 62px;
+    line-height: 0.9;
+    margin: 15px 0;
+  }
+  .fixedSymbol, .typingText, .cursor{
+    font-size: 20px;
+  }
+  .comment1, .const, .variable, .equal, .link{
+    font-size: 14px;
+  }
+  .leftHero{
+    gap: 150px;
+  }
+  .comment1{
+    display: block;
+  }
+  .comment{
+    display: none;
+  }
+  .gitlink{
+    gap: 10px;
+    /* width: 80px; */
+    position: relative;
+  }
+  .lower{
+    gap: 10px;
+  }
+  .br{
+    display: block;
+  }
+  .rest{
+    display: none;
+  }
+  .rest2{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    display: block;
+    font-size: 14px;
+  }
+  .blur1 {
+  display: block;
+  position: absolute;
+  width: 700px;
+  top: -70%;
+  z-index: -1;
+  opacity: 65%;
+  left: -45%;
+}
+
 }

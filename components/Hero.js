@@ -15,6 +15,7 @@ const Hero = () => {
     <div className={classes.hero}>
       <div className={classes.leftHero}>
         <div className={classes.upper}>
+          <img className={classes.blur1} src="/Background Blurs.webp" alt="" />
           <h2 className={classes.intro}>Hi all. I am</h2>
           <h1 className={classes.name}>Shivam kaushal</h1>
           <div className={classes.role}>
@@ -34,11 +35,19 @@ const Hero = () => {
           <div className={classes.comment}>
             // you can also see it on my github page
           </div>
+          <div className={classes.comment1}>// Find my profile on Github</div>
           <div className={classes.gitlink}>
             <div className={classes.const}>const</div>
             <div className={classes.variable}>githubLink</div>
             <div className={classes.equal}>=</div>
-            <div className={classes.link}>https://github.com/shivam907</div>;
+            <div className={classes.link}>
+              https://
+              <div className={classes.br} />
+              <div className={classes.rest}>github.com/shivam907</div>
+              <div className={classes.rest2}>github.com/shivam907/portfolio-v2</div>
+              {/* <div className={classes.rest}>?tab=repositories</div> */}
+            </div>
+            ;
           </div>
         </div>
       </div>
