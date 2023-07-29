@@ -17,15 +17,17 @@ const Footer = () => {
           </Link>
         </div>
         <div className={classes.footerLink}>
-        
-        <a href="https://meet.google.com/qyh-yrpy-ojr?authuser=1" target="_black">
+          <a
+            href="https://meet.google.com/qyh-yrpy-ojr?authuser=1"
+            target="_black"
+          >
             <img src="/icons8-google-meet-26.png" alt="" />
           </a>
         </div>
       </div>
       <div className={classes.github}>
         <Link href="https://github.com/shivam907">
-          <div className={classes.footerLink1}>Shivam907</div>
+          <div className={classes.footerLink1}>shivam907</div>
         </Link>
         <img src="/icons8-github.webp" alt="" />
       </div>
