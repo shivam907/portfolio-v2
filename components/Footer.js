@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div className={classes.github}>
         <Link href="https://github.com/shivam907">
-          <div className={classes.footerLink1}>shivam907</div>
+          <div className={classes.footerLink1}>Shivam907</div>
         </Link>
         <img src="/icons8-github.webp" alt="" />
       </div>
