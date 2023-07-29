@@ -67,3 +67,28 @@
   top: 0;
   left: 0;
 }
+.menu{
+  display: none;
+}
+
+@media screen and (max-width:750px) {
+  .nav{
+    /* font-size: 62.5% !important;  */
+  }
+  .navl{
+    display: none;
+  }
+  .nav{
+    padding: 20px 10px;
+  }
+  .nameHeading{
+    font-size: 16px !important;
+  }
+  .navLink{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  
+}

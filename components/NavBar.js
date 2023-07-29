@@ -82,6 +82,7 @@ const NavBar = () => {
           _contact-me
         </div>
       </Link>
+      <img className={classes.menu} src="/menu.png" alt="" />
     </nav>
   );
 };
