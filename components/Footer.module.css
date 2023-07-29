@@ -94,3 +94,21 @@ background-color: #011627;
   top: 0;
   left: 0;
 }
+
+@media screen and (max-width:750px) {
+
+  .footerLink, .footerLink1{
+
+  font-size: 16px;
+  padding: 7.5px 10px;
+  }
+  .footerLink img, .github img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+  }
+  .footer{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
