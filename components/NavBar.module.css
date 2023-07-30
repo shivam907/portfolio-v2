@@ -74,15 +74,16 @@
 @media screen and (max-width:750px) {
   .nav{
     /* font-size: 62.5% !important;  */
+    padding-right: 3rem;
   }
   .navl{
     display: none;
   }
   .nav{
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
   }
   .nameHeading{
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
   }
   .navLink{
     display: none;

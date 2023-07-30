@@ -57,3 +57,9 @@ input[type="checkbox"]:checked:before {
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 2;
 }
+
+@media screen and (max-width:1000px) {
+  *{
+    font-size: 2.3vw;
+  }
+}

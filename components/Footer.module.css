@@ -13,8 +13,8 @@
   color: #607b96;
   font-size: 1.8rem;
   padding: 1.5rem 3rem;
-  border-left: 1px solid #1e2d3d;
-  border-right: 1px solid #1e2d3d;
+  border-left: .1rem solid #1e2d3d;
+  border-right: .1rem solid #1e2d3d;
   position: relative;
   display: inline-block;
 }
@@ -26,8 +26,8 @@
   font-size: 1.8rem;
   padding: 1.5rem 3rem;
   padding-right: 1rem;
-  border-left: 1px solid #1e2d3d;
-  border-right: 1px solid #1e2d3d;
+  border-left: .1rem solid #1e2d3d;
+  border-right: .1rem solid #1e2d3d;
   position: relative;
   display: inline-block;
 }
@@ -44,7 +44,7 @@ height: 5rem;
 }
 .navLinkActive {
   color: #fff !important;
-  border-bottom: 3px solid #fea55f;
+  border-bottom: .3rem solid #fea55f;
 }
 .footer {
   width: 100vw;
@@ -55,7 +55,7 @@ height: 5rem;
   justify-content: space-between;
   align-items: center;
 background-color: #011627;
-  border-top: 1px solid #1e2d3d;
+  border-top: .1rem solid #1e2d3d;
 }
 
 .footerLeft {
@@ -73,7 +73,7 @@ background-color: #011627;
   bottom: 0;
   content: "";
   display: block;
-  height: 2.8px;
+  height: 2..8rem;
   left: 50%;
   position: absolute;
   background: #fea55f;
@@ -95,22 +95,22 @@ background-color: #011627;
   left: 0;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:75.0rem) {
 
   .footerLink, .footerLink1{
 
-  font-size: 16px;
-  padding: 7.5px 10px;
+  font-size: 1.6rem;
+  padding: 0.75rem 1.0rem;
   }
   .footerLink img, .github img{
-    width: 22px;
-    height: 22px;
+    width: 2.2rem;
+    height: 2.2rem;
     align-self: center;
-    margin-top: 1px;
+    margin-top: 0.1rem;
   }
   .footerLink1{
     border-left: none;
-    padding-right: 20px;
+    /* padding-right: 2.0rem; */
   }
   .footer{
     display: flex;

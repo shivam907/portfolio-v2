@@ -126,7 +126,7 @@
   display: inline;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:75.0rem) {
 
   .rightHero{
     display: none;
@@ -139,21 +139,21 @@
     width: 80vw;
   }
   .intro{
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .name{
-    font-size: 62px;
+    font-size: 6.2rem;
     line-height: 0.9;
-    margin: 15px 0;
+    margin: 1.5rem 0;
   }
   .fixedSymbol, .typingText, .cursor{
-    font-size: 20px;
+    font-size: 2.0rem;
   }
   .comment1, .const, .variable, .equal, .link{
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .leftHero{
-    gap: 150px;
+    gap: 15.0rem;
   }
   .comment1{
     display: block;
@@ -162,12 +162,12 @@
     display: none;
   }
   .gitlink{
-    gap: 10px;
-    /* width: 80px; */
+    gap: 1.0rem;
+    /* width: 8.0rem; */
     position: relative;
   }
   .lower{
-    gap: 10px;
+    gap: 1.0rem;
   }
   .br{
     display: block;
@@ -180,12 +180,12 @@
     /* top: 0; */
     left: 0;
     display: block;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
   .blur1 {
   display: block;
   position: absolute;
-  width: 700px;
+  width: 70.0rem;
   top: -70%;
   z-index: -1;
   opacity: 65%;
