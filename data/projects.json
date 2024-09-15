@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Project 1",
+    "description": "Duis aute irure dolor in velit esse cillum dolore.",
+    "projectLink": "https://lovely-gumption-003323.netlify.app/",
+    "githubLink": "https://github.com/shivam907/audiophile",
+    "image": "/proj1.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "audiohile-ecommerce",
+    "technologies": ["CSS", "ReactJs"]
+  },
+  {
+    "id": 2,
+    "name": "Project 2",
+    "description": "Duis aute irure dolor in velit esse cillum dolore.",
+    "projectLink": "https://metaverse-henna.vercel.app/",
+    "githubLink": "https://github.com/shivam907/metaverse",
+    "image": "/proj2.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "metaverse",
+    "technologies": ["HTML", "CSS", "ReactJs"]
+  },
+  {
+    "id": 3,
+    "name": "Project 3",
+    "description": "Duis aute irure dolor in velit esse cillum dolore.",
+    "projectLink": "",
+    "githubLink": "",
+    "image": "/proj3.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "snippet-saver",
+    "technologies": ["CSS", "NextJs"]
+  }
+]

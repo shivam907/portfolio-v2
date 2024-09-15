@@ -340,23 +340,35 @@
 
 .imm{
   position: relative;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 .imm img{
-  align-self: flex-end;
+  /* align-self: flex-end; */
+  width: 4rem;
+  margin: 0;
+  height: 4rem;
+}
+.cirr{
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cir{
   display: none;
-  position: absolute;
-  top: -2rem;
-  left: 0.3rem;
-  width: 2.6rem;
-  height: 2.45rem;
+  width: 3.2rem;
+  height: 3.2rem;
   border-radius: 50%;
   background-color: #374c6090;
   /* top: 0; */
 }
-
+.btns a{
+  display: block;
+}
 .imm:hover .cir{
   display: block;
   cursor: pointer;
