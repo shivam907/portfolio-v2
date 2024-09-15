@@ -7,8 +7,7 @@ import projectss from "../../data/projects.json";
 const Page = () => {
   const [projects, setProjects] = useState(projectss);
   const [selectedTechnologies, setSelectedTechnologies] = useState({
-    HTML: true,
-    CSS: true,
+    "HTML CSS": true,
     ReactJs: true,
     NodeJs: true,
     JavaScript: true,
@@ -23,9 +22,8 @@ const Page = () => {
     }));
   };
 
-  // Filter projects based on selected technologies
   const filteredProjects = projects.filter((project) => {
-    const projectTechs = project.technologies || []; // Ensure projects have a technologies array
+    const projectTechs = project.technologies || [];
     return Object.keys(selectedTechnologies).some(
       (tech) => selectedTechnologies[tech] && projectTechs.includes(tech)
     );
@@ -50,7 +48,7 @@ const Page = () => {
             <div className={classes.name}>my-projects</div>
           </div>
           <div className={classes.select}>
-            {["HTML", "CSS", "ReactJs", "NodeJs", "JavaScript", "NextJs"].map(
+            {["HTML CSS", "ReactJs", "NodeJs", "JavaScript", "NextJs"].map(
               (tech) => (
                 <div key={tech} className={classes.option}>
                   <label className={classes.check}>
@@ -103,7 +101,11 @@ const Page = () => {
               </div>
             ))
           ) : (
-            <p>No projects match the selected technologies.</p>
+            <div className={classes.no}>
+              <h1>404</h1>
+              <h2>|</h2>
+              <p>// No projects match the selected technologies.</p>
+            </div>
           )}
         </div>
       </div>

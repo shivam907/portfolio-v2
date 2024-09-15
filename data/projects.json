@@ -8,7 +8,7 @@
     "image": "/proj1.webp",
     "repoIcon": "/icons8-github.svg",
     "nameClass": "audiohile-ecommerce",
-    "technologies": ["CSS", "ReactJs"]
+    "technologies": ["ReactJs"]
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "image": "/proj2.webp",
     "repoIcon": "/icons8-github.svg",
     "nameClass": "metaverse",
-    "technologies": ["HTML", "CSS", "ReactJs"]
+    "technologies": ["HTML CSS"]
   },
   {
     "id": 3,
@@ -30,6 +30,6 @@
     "image": "/proj3.webp",
     "repoIcon": "/icons8-github.svg",
     "nameClass": "snippet-saver",
-    "technologies": ["CSS", "NextJs"]
+    "technologies": ["NextJs"]
   }
 ]
