@@ -117,7 +117,7 @@ const databases = new Databases(client);
                 <div className={classes.fileIcon}>
                   <img src="/mail-icon.webp" alt="" />
                 </div>
-                <div className={classes.fileName}>shivam@academer.co</div>
+                <div className={classes.fileName}>syncu907@gmail.com</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
@@ -202,13 +202,19 @@ const databases = new Databases(client);
         </div>
         <div className={classes.contactData}>
           <div className={classes.inp1}>
-          <div className={classes.label}>
-
-            <label className={`${nameErr? classes.err:''}`} htmlFor="">_name:</label>
-            <label className={`${nameErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
-          </div>
+            <div className={classes.label}>
+              <label className={`${nameErr ? classes.err : ""}`} htmlFor="">
+                _name:
+              </label>
+              <label
+                className={`${nameErr ? classes.err : classes.none}`}
+                htmlFor=""
+              >
+                invalid-input
+              </label>
+            </div>
             <input
-            className={nameErr?classes.error:''}
+              className={nameErr ? classes.error : ""}
               type="text"
               value={name}
               ref={nameInput}
@@ -218,13 +224,19 @@ const databases = new Databases(client);
             />
           </div>
           <div className={classes.inp1}>
-          <div className={classes.label}>
-
-            <label className={`${emailErr? classes.err:''}`} htmlFor="">_email:</label>
-            <label className={`${emailErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
-          </div>
+            <div className={classes.label}>
+              <label className={`${emailErr ? classes.err : ""}`} htmlFor="">
+                _email:
+              </label>
+              <label
+                className={`${emailErr ? classes.err : classes.none}`}
+                htmlFor=""
+              >
+                invalid-input
+              </label>
+            </div>
             <input
-            className={emailErr?classes.error:''}
+              className={emailErr ? classes.error : ""}
               type="email"
               ref={emailInput}
               value={email}
@@ -234,13 +246,19 @@ const databases = new Databases(client);
             />
           </div>
           <div className={classes.inp1}>
-          <div className={classes.label}>
-
-            <label className={`${messageErr? classes.err:''}`} htmlFor="">_message:</label>
-            <label className={`${messageErr? classes.err:classes.none}`} htmlFor="">invalid-input</label>
-          </div>
+            <div className={classes.label}>
+              <label className={`${messageErr ? classes.err : ""}`} htmlFor="">
+                _message:
+              </label>
+              <label
+                className={`${messageErr ? classes.err : classes.none}`}
+                htmlFor=""
+              >
+                invalid-input
+              </label>
+            </div>
             <textarea
-            className={messageErr?classes.error:''}
+              className={messageErr ? classes.error : ""}
               type="text"
               ref={messageInput}
               value={message}

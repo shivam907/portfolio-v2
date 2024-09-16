@@ -131,7 +131,7 @@ const page = () => {
                     <img src="/folderIcon.webp" alt="" />
                   </div>
                   <div className={classes.folderImage}>
-                    <img src="/folder3.webp" alt="" />
+                    <img src="/folder3.png" alt="" />
                   </div>
                   <div className={classes.folderName}>education</div>
                 </div>
@@ -185,7 +185,7 @@ const page = () => {
                 <div className={classes.fileIcon}>
                   <img src="/mail-icon.webp" alt="" />
                 </div>
-                <div className={classes.fileName}>shivam@academer.co</div>
+                <div className={classes.fileName}>syncu907@gmail.com</div>
               </div>
               <div className={classes.folderHead}>
                 <div className={classes.fileIcon}>
@@ -198,16 +198,25 @@ const page = () => {
         </div>
       </div>
       <div className={classes.code}>
-        {fileActive!=0 && <div className={classes.upperBar}>
-          <div className={classes.fileOpened}>
-            <div className={classes.fileOpenedName}>
-              {fileNames[fileActive - 1]}
-            </div>
-            <div className={classes.fileIcons}>
-              <img src="/close-icon.webp" alt="" className={classes.close} onClick={()=>{changeFileActive(0)}}/>
+        {fileActive != 0 && (
+          <div className={classes.upperBar}>
+            <div className={classes.fileOpened}>
+              <div className={classes.fileOpenedName}>
+                {fileNames[fileActive - 1]}
+              </div>
+              <div className={classes.fileIcons}>
+                <img
+                  src="/close-icon.webp"
+                  alt=""
+                  className={classes.close}
+                  onClick={() => {
+                    changeFileActive(0);
+                  }}
+                />
+              </div>
             </div>
           </div>
-        </div>}
+        )}
         {/* {fileActive==1?File1:fileActive==2?File2:fileActive==3?File3:''} */}
         {/* {fileActive} */}
         {file}

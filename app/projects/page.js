@@ -101,11 +101,15 @@ const Page = () => {
               </div>
             ))
           ) : (
-            <div className={classes.no}>
-              <h1>404</h1>
-              <h2>|</h2>
-              <p>// No projects match the selected technologies.</p>
-            </div>
+            <>
+              <div></div>
+              <div className={classes.no}>
+                <h1>404</h1>
+                <h2>|</h2>
+                <p>// No projects match the selected technologies.</p>
+              </div>
+              <div></div>
+            </>
           )}
         </div>
       </div>

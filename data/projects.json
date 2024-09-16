@@ -2,10 +2,10 @@
   {
     "id": 1,
     "name": "Project 1",
-    "description": "Duis aute irure dolor in velit esse cillum dolore.",
-    "projectLink": "https://lovely-gumption-003323.netlify.app/",
+    "description": "An E-commerce website made using React and Redux Toolkit",
+    "projectLink": "https://audiophile-shivam907.vercel.app/",
     "githubLink": "https://github.com/shivam907/audiophile",
-    "image": "/proj1.webp",
+    "image": "/aud.webp",
     "repoIcon": "/icons8-github.svg",
     "nameClass": "audiohile-ecommerce",
     "technologies": ["ReactJs"]
@@ -13,23 +13,121 @@
   {
     "id": 2,
     "name": "Project 2",
-    "description": "Duis aute irure dolor in velit esse cillum dolore.",
-    "projectLink": "https://metaverse-henna.vercel.app/",
-    "githubLink": "https://github.com/shivam907/metaverse",
-    "image": "/proj2.webp",
-    "repoIcon": "/icons8-github.svg",
-    "nameClass": "metaverse",
-    "technologies": ["HTML CSS"]
+    "description": "A News Portal with various formats of news built using NextJs.",
+    "projectLink": "https://www.achchikhabar.in/",
+    "image": "/news.webp",
+    "nameClass": "achchi-khabar",
+    "technologies": ["NextJs"]
   },
   {
     "id": 3,
     "name": "Project 3",
-    "description": "Duis aute irure dolor in velit esse cillum dolore.",
-    "projectLink": "",
-    "githubLink": "",
-    "image": "/proj3.webp",
+    "description": "A Job Portal where jobs from different job boards are displayed using web scraping",
+    "projectLink": "https://jobportal-shivam907.vercel.app/",
+    "githubLink": "https://github.com/shivam907/jobportal/",
+    "image": "/job.webp",
     "repoIcon": "/icons8-github.svg",
-    "nameClass": "snippet-saver",
+    "nameClass": "job-portal",
     "technologies": ["NextJs"]
+  },
+  {
+    "id": 4,
+    "name": "Project 4",
+    "description": "A Landing page of the online course website built using NextJs",
+    "projectLink": "https://www.thelearnez.com/",
+    "githubLink": "",
+    "image": "/learn.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "learn-ez",
+    "technologies": ["NextJs"]
+  },
+  {
+    "id": 5,
+    "name": "Project 5",
+    "description": "An E-commerce website made using NextJs as an assignment for profiles.fyi",
+    "projectLink": "https://profiles-fyi-shivam907.vercel.app/",
+    "githubLink": "https://github.com/shivam907/assignment",
+    "image": "/prof.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "profiles-fyi",
+    "technologies": ["NextJs"]
+  },
+  {
+    "id": 6,
+    "name": "Project 6",
+    "description": "An Offline Image Resizer made using HTML, CSS and Service Workers",
+    "projectLink": "https://shivam907.github.io/image-compressor",
+    "githubLink": "https://github.com/shivam907/image-compressor",
+    "image": "/img.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "offline-image-resizer",
+    "technologies": ["HTML CSS", "JavaScript"]
+  },
+  {
+    "id": 7,
+    "name": "Project 7",
+    "description": "An Offline Image Resizer made using HTML, CSS and Service Workers",
+    "projectLink": "https://binary-tree-visualizer-steel.vercel.app/",
+    "githubLink": "https://github.com/shivam907/Binary-Tree-Visualizer",
+    "image": "/tr.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "offline-image-resizer",
+    "technologies": ["NextJs"]
+  },
+  {
+    "id": 8,
+    "name": "Project 8",
+    "description": "An Course Module management website made as an assignment for Toddle",
+    "projectLink": "https://toddle-smoky.vercel.app/",
+    "githubLink": "https://github.com/shivam907/toddle",
+    "image": "/toddle.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "toddle-course",
+    "technologies": ["ReactJs"]
+  },
+  {
+    "id": 9,
+    "name": "Project 9",
+    "description": "An Wedding photographer booking form and Management System",
+    "projectLink": "https://www.youtube.com/watch?v=CpHBh32csJw",
+    "githubLink": "",
+    "image": "/phera.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "pheras-wedding",
+    "technologies": ["NextJs"]
+  },
+  {
+    "id": 10,
+    "name": "Project 10",
+    "description": "An Task Booking Website for booking daily taks helpers developed using HTML CSS",
+    "projectLink": "https://shivam907.github.io/taskRabbitFrontend/home/",
+    "githubLink": "https://github.com/shivam907/taskRabbitFrontend",
+    "image": "/task.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "task-rabbit",
+    "technologies": ["HTML CSS"]
+  },
+  {
+    "id": 11,
+    "name": "Project 11",
+    "description": "An Landing page for the online meal planner website built using HTML, CSS",
+    "projectLink": "https://shivam907.github.io/omnifood",
+    "githubLink": "https://github.com/shivam907/omnifood",
+    "image": "/omni.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "omni-food",
+    "technologies": ["HTML CSS"]
+  },
+  {
+    "id": 12,
+    "name": "Project 12",
+    "description": "An Notes website where users can view/download the notes and assignments",
+    "projectLink": "https://illustrious-pothos-fea1aa.netlify.app/",
+    "githubLink": "",
+    "image": "/assg.webp",
+    "repoIcon": "/icons8-github.svg",
+    "nameClass": "cgc-assgn",
+    "technologies": ["ReactJs"]
   }
 ]
+ 
