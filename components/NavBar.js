@@ -17,6 +17,8 @@ const NavBar = () => {
       ? 2
       : pathname == "/contact"
       ? 3
+      : pathname == "/resume"
+      ? 4
       : 0
   );
   // React.useEffect(()=>{
@@ -65,6 +67,18 @@ const NavBar = () => {
                 }}
               >
                 _projects
+              </div>
+            </Link>
+            <Link href="resume">
+              <div
+                className={`${classes.navLink} ${
+                  active == 4 ? classes.navLinkActive : ""
+                }`}
+                onClick={() => {
+                  setActive(4);
+                }}
+              >
+                _resume
               </div>
             </Link>
           </div>
