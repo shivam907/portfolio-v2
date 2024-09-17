@@ -83,17 +83,21 @@ const Page = () => {
                     <p>{project.description}</p>
                     <div className={classes.btns}>
                       {project.projectLink && (
-                        <Link href={project.projectLink}>
+                        <a target="_blank" href={project.projectLink}>
                           <div className={classes.view}>Live Demo</div>
-                        </Link>
+                        </a>
                       )}
                       {project.githubLink && (
-                        <Link className={classes.imm} href={project.githubLink}>
+                        <a
+                          target="_blank"
+                          className={classes.imm}
+                          href={project.githubLink}
+                        >
                           <img src={project.repoIcon} alt="GitHub" />
                           <div className={classes.cirr}>
                             <div className={classes.cir}></div>
                           </div>
-                        </Link>
+                        </a>
                       )}
                     </div>
                   </div>
