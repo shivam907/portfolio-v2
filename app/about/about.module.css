@@ -107,12 +107,17 @@
   display: flex;
   border-right: 1px solid #1e2d3d;
   flex-direction: column;
+  overflow-y: auto;
 }
 .upperBar {
   width: 100%;
   border-bottom: 1px solid #1e2d3d;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #011627;
+  z-index: 1;
 }
 .fileOpened {
   display: flex;
@@ -120,6 +125,7 @@
   padding: 0.9rem 2.5rem;
   border-right: 1px solid #1e2d3d;
   align-items: center;
+  width: 100%;
 }
 .fileOpened:hover {
   background-color: #ffffff20;
@@ -130,6 +136,9 @@
 .fileOpenedName {
   font-size: 1.8rem;
   color: #607b96;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .snippets {
   margin-left: 3rem;
@@ -207,4 +216,64 @@
 }
 .close{
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .code {
+    width: 100%;
+    border-right: none;
+  }
+  
+  .fileOpened {
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBar {
+    display: none;
+  }
+  
+  .info {
+    display: none;
+  }
+  
+  .snippets {
+    display: none;
+  }
+  
+  .code {
+    width: 100%;
+    border-right: none;
+    padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .upperBar {
+    padding: 0.5rem;
+  }
+  
+  .fileOpened {
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+  
+  .fileOpenedName {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .code {
+    padding: 0.5rem;
+  }
+  
+  .fileOpened {
+    padding: 0.5rem;
+  }
+  
+  .fileOpenedName {
+    font-size: 1.4rem;
+  }
 }

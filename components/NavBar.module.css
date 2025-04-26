@@ -4,11 +4,19 @@
   font-size: 1.8rem;
   padding: 1.5rem 0;
   padding-left: 3rem;
+  text-decoration: none !important;
   font-weight: 500;
+}
+.nav a {
+  text-decoration: none !important;
+  /* display: none !important /; */
 }
 .nameHeading:hover {
   cursor: pointer;
   color: #fff;
+}
+.navLinks a {
+  text-decoration: none !important;
 }
 .navLink {
   color: #607b96;
@@ -18,6 +26,11 @@
   border-right: 1px solid #1e2d3d;
   position: relative;
   display: inline-block;
+  text-decoration: none !important;
+}
+.navLink:visited {
+  color: #607b96;
+  text-decoration: none !important;
 }
 .navLinkActive {
   color: #fff !important;
@@ -53,7 +66,7 @@
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.navLink:hover:after {
+.navLink:hover:not(:visited):after {
   width: 100%;
   left: 0;
 }
@@ -71,6 +84,69 @@
   display: none;
 }
 
+.menu {
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #011627;
+  z-index: 1000;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobileMenu.active {
+  transform: translateX(0);
+}
+
+.mobileMenuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+
+.mobileMenuLink {
+  color: #607b96;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #1e2d3d;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.mobileMenuLink:visited {
+  color: #607b96;
+}
+
+.mobileMenuLink:hover {
+  color: #fff;
+}
+
+.mobileMenuLink.active {
+  color: #fff;
+  border-bottom: 3px solid #fea55f;
+}
+
+.closeMenu {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+
 @media screen and (max-width:750px) {
   .nav{
     /* font-size: 62.5% !important;  */
@@ -83,6 +159,7 @@
     /* padding: 20px 10px; */
   }
   .nameHeading{
+    font-size: 2rem;
     /* font-size: 16px !important; */
   }
   .navLink{
@@ -92,4 +169,45 @@
     display: block;
   }
   
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .navl {
+    display: none;
+  }
+
+  .navLink {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .nameHeading {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .nameHeading {
+    /* font-size: 1.4rem; */
+  }
+
+  .mobileMenuLink {
+    font-size: 1.6rem;
+  }
 }

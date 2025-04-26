@@ -1,16 +1,14 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import classes from "./NavBar.module.css";
-
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
+
 const NavBar = () => {
-  // const router = useRouter();
   const searchParams = useSearchParams();
-  console.log(searchParams);
   const pathname = usePathname();
-  console.log("path", pathname);
-  const [active, setActive] = React.useState(
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState(
     pathname == "/about"
       ? 1
       : pathname == "/projects"
@@ -21,83 +19,89 @@ const NavBar = () => {
       ? 4
       : 0
   );
-  // React.useEffect(()=>{
 
-  //   setActive(pathname == "/about" ? 1 : pathname == "/projects" ? 2 : pathname=="/contact"?3:0);
-  // },[pathname])
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLinkClick = (index) => {
+    setActive(index);
+    setIsMenuOpen(false);
+  };
+
+  const navLinks = [
+    { path: "/", label: "_hello", index: 0 },
+    { path: "/about", label: "_about-me", index: 1 },
+    { path: "/projects", label: "_projects", index: 2 },
+    { path: "/resume", label: "_resume", index: 4 },
+    { path: "/contact", label: "_contact-me", index: 3 },
+  ];
+
   return (
-    <nav className={classes.nav}>
-      <div className={classes.leftNavItems}>
-        <Link href="/">
-          <div className={classes.nameHeading}>shivam-kaushal</div>
-        </Link>
-        <div className={classes.navl}>
-          <div className={classes.navLinks}>
-            <Link href="/">
-              <div
-                className={`${classes.navLink} ${
-                  active == 0 ? classes.navLinkActive : ""
-                }`}
-                onClick={() => {
-                  setActive(0);
-                }}
-              >
-                _hello
-              </div>
-            </Link>
-            <Link href="/about">
-              <div
-                className={`${classes.navLink} ${
-                  active == 1 ? classes.navLinkActive : ""
-                }`}
-                onClick={() => {
-                  setActive(1);
-                }}
-              >
-                _about-me
-              </div>
-            </Link>
-            <Link href="projects">
-              <div
-                className={`${classes.navLink} ${
-                  active == 2 ? classes.navLinkActive : ""
-                }`}
-                onClick={() => {
-                  setActive(2);
-                }}
-              >
-                _projects
-              </div>
-            </Link>
-            <Link href="resume">
-              <div
-                className={`${classes.navLink} ${
-                  active == 4 ? classes.navLinkActive : ""
-                }`}
-                onClick={() => {
-                  setActive(4);
-                }}
-              >
-                _resume
-              </div>
-            </Link>
+    <>
+      <nav className={classes.nav}>
+        <div className={classes.leftNavItems}>
+          <Link href="/">
+            <div className={classes.nameHeading}>shivam-kaushal</div>
+          </Link>
+          <div className={classes.navl}>
+            <div className={classes.navLinks}>
+              {navLinks.slice(0, -1).map((link) => (
+                <Link key={link.path} href={link.path}>
+                  <div
+                    className={`${classes.navLink} ${
+                      active == link.index ? classes.navLinkActive : ""
+                    }`}
+                    onClick={() => handleLinkClick(link.index)}
+                  >
+                    {link.label}
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <Link href="/contact">
-        <div
-          className={`${classes.navLink} ${
-            active == 3 ? classes.navLinkActive : ""
-          }`}
-          onClick={() => {
-            setActive(3);
-          }}
-        >
-          _contact-me
+        <Link href="/contact">
+          <div
+            className={`${classes.navLink} ${
+              active == 3 ? classes.navLinkActive : ""
+            }`}
+            onClick={() => handleLinkClick(3)}
+          >
+            _contact-me
+          </div>
+        </Link>
+        <img
+          className={classes.menu}
+          src="/menu.png"
+          alt="Menu"
+          onClick={toggleMenu}
+        />
+      </nav>
+
+      <div className={`${classes.mobileMenu} ${isMenuOpen ? classes.active : ""}`}>
+        <img
+          className={classes.closeMenu}
+          src="/close-icon.webp"
+          alt="Close"
+          onClick={toggleMenu}
+        />
+        <div className={classes.mobileMenuContent}>
+          {navLinks.map((link) => (
+            <Link key={link.path} href={link.path}>
+              <div
+                className={`${classes.mobileMenuLink} ${
+                  active == link.index ? classes.active : ""
+                }`}
+                onClick={() => handleLinkClick(link.index)}
+              >
+                {link.label}
+              </div>
+            </Link>
+          ))}
         </div>
-      </Link>
-      <img className={classes.menu} src="/menu.png" alt="" />
-    </nav>
+      </div>
+    </>
   );
 };
 

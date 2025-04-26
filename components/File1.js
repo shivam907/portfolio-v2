@@ -7,8 +7,9 @@ const File1 = () => {
       list={[
         "/**",
         "* About me",
-        "* I have Shivam Kaushal",
+        "* I am Shivam Kaushal",
         "* I belong to Hoshiarpur, Punjab,",
+        "* I am currently in Bengaluru,",
         "* I am a captivating individual,",
         "* Driven by a desire to make a positive impact",
         "* I possess a vibrant thirst for knowledge,",
