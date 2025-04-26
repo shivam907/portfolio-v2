@@ -357,7 +357,7 @@ color: #607b96;
 
 @media screen and (max-width: 1200px) {
   .code {
-    display: none;
+    /* display: none; */
   }
   
   .contact {
@@ -383,9 +383,7 @@ color: #607b96;
   }
   
   .code {
-    width: 100%;
-    border-right: none;
-    padding: 2rem;
+    display: none;
   }
   
   .upperBar {
