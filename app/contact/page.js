@@ -22,10 +22,6 @@ const databases = new Databases(client);
   const [workspace1, changeWorkspace1] = React.useState(true);
   const [workspace2, changeWorkspace2] = React.useState(true);
   const formHandler = async() => {
-    // formSubmitted(true);
-    // changeEmail("");
-    // changeMessage("");
-    // console.log(nameInput.current.value);
     let a=0;
     if(nameInput.current.value.length<1){
       changeNameErr(true)
@@ -35,7 +31,6 @@ const databases = new Databases(client);
       changeNameErr(false)
     }
     if(emailInput.current.value.length>1 && emailInput.current.value.includes('@') && emailInput.current.value.includes('.')){
-      
       changeEmailErr(false)
       a+=1
     }
@@ -50,23 +45,11 @@ const databases = new Databases(client);
       changeMessageErr(true)
     }
     if(a==3){
-      const promise = databases.createDocument(
-        "64b1ad91134c9cd6a637",
-        "64b1add1590711ef1bf7",
-        Math.random().toString(),
-        {name:name,
-        email:email,
-      message:message}
-      );
-
-      promise.then(
-        function (response) {
-          console.log(response); // Success
-        },
-        function (error) {
-          console.log(error); // Failure
-        }
-      );
+      const subject = `Message from ${name} (${email})`;
+      const body = message;
+      const mailtoLink = `mailto:shivamkaushal907@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+      
       formSubmitted(true);
       changeName('');
       changeEmail('');

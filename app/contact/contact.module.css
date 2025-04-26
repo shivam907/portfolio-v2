@@ -354,3 +354,123 @@ color: #607b96;
 .inp1 input:focus, .inp1 textarea:focus{
   outline: 1px solid #fff;
 }
+
+@media screen and (max-width: 1200px) {
+  .code {
+    display: none;
+  }
+  
+  .contact {
+    width: 100%;
+  }
+  
+  .contactData {
+    padding: 3rem 5rem;
+  }
+  
+  .inp1 input, .inp1 textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBar {
+    display: none;
+  }
+  
+  .info {
+    display: none;
+  }
+  
+  .code {
+    width: 100%;
+    border-right: none;
+    padding: 2rem;
+  }
+  
+  .upperBar {
+    padding: 1rem;
+  }
+  
+  .fileOpened {
+    padding: 0.5rem 1rem;
+  }
+  
+  .fileOpenedName {
+    font-size: 1.6rem;
+  }
+  
+  .contact {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .contactData {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .inp1 {
+    gap: 1rem;
+  }
+  
+  .inp1 label {
+    font-size: 1.6rem;
+  }
+  
+  .inp1 input, .inp1 textarea {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .submit {
+    padding: 1rem 2rem;
+  }
+  
+  .submit p {
+    font-size: 1.6rem;
+  }
+  
+  .displayFile {
+    flex-direction: column;
+  }
+  
+  .numbers {
+    display: none;
+  }
+  
+  .displayFileContent {
+    padding: 1rem;
+  }
+  
+  .p, .type, .variableName, .data {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactData {
+    padding: 1.5rem;
+  }
+  
+  .inp1 label {
+    font-size: 1.4rem;
+  }
+  
+  .inp1 input, .inp1 textarea {
+    font-size: 1.4rem;
+    padding: 0.6rem 1rem;
+  }
+  
+  .submit {
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .submit p {
+    font-size: 1.4rem;
+  }
+  
+  .p, .type, .variableName, .data {
+    font-size: 1.4rem;
+  }
+}

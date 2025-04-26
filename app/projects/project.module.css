@@ -404,3 +404,33 @@
   font-size: 5rem;
   font-weight: lighter;
 }
+
+@media screen and (max-width: 768px) {
+  .leftBar {
+    display: none;
+  }
+  
+  .info {
+    display: none;
+  }
+  
+  .code {
+    width: 100%;
+    border-right: none;
+  }
+  
+  .displayFile {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .projectBox {
+    width: 100%;
+  }
+  
+  .projectBox img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
